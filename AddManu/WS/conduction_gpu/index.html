@@ -13,6 +13,10 @@
       
       
       
+        <link rel="prev" href="../enthalpy_gpu/">
+      
+      
+        <link rel="next" href="../../../SubManu/STH/01_PartList/">
       
       
         
@@ -23,7 +27,7 @@
     
     
       
-        <title>conduction_gpu.py｜三維熱傳導 - MISLab at NKUST</title>
+        <title>4. Heat Conduction - MISLab at NKUST</title>
       
     
     
@@ -112,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              conduction_gpu.py｜三維熱傳導
+              4. Heat Conduction
             
           </span>
         </div>
@@ -258,18 +262,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -290,7 +296,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -556,18 +562,20 @@
                 
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
         
           
           <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
@@ -588,7 +596,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -606,7 +614,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../AM-InitialSpace/" class="md-nav__link">
+      <a href="../geometry_gpu/" class="md-nav__link">
         
   
   
@@ -634,7 +642,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../AM-LaserScanning/" class="md-nav__link">
+      <a href="../laser_gpu/" class="md-nav__link">
         
   
   
@@ -662,7 +670,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../AM-PowerAllocation/" class="md-nav__link">
+      <a href="../enthalpy_gpu/" class="md-nav__link">
         
   
   
@@ -687,10 +695,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../AM-HeatConduction/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Heat Conduction
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -706,6 +741,120 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-responsibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 程式說明 / Responsibility
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Input（輸入）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Input（輸入）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#conduction_sourcet-f" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        conduction_source(T, F)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Output（輸出）與副作用
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-gpucpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 程式依賴與 GPU/CPU 邊界
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 物理公式／數值實作對照
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-ai-ai-editing-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. AI 修改約束 / AI Editing Rules
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 程式位置及檢查
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
