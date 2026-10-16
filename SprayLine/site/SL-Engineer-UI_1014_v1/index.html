@@ -1,0 +1,3794 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="This is a user guides and services developed by MISLab at NKUST">
+      
+      
+        <meta name="author" content="horace.yang@gmail.com">
+      
+      
+      
+        <link rel="prev" href="../SL-Issues/">
+      
+      
+        <link rel="next" href="../SL-Manager-UI_1015_v1/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>a1. Engineer User Interface - Project of Spray Line Applications</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#spray-line-engineer-ui" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Project of Spray Line Applications" class="md-header__button md-logo" aria-label="Project of Spray Line Applications" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Project of Spray Line Applications
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              a1. Engineer User Interface
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Project of Spray Line Applications" class="md-nav__button md-logo" aria-label="Project of Spray Line Applications" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Project of Spray Line Applications
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SL-Issues/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Issue Tracking
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    a1. Engineer User Interface
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    a1. Engineer User Interface
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-system-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. System Architecture
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. System Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-active-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Active Components
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-page-layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Page Layout
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Page Layout">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-header" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Header
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-summary-cards" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Summary Cards
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-integration-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Integration Status
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-station-area" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Station Area
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-time-point-viewer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 Time Point Viewer
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-station-and-component-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Station and Component Model
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-engineer-ui-internal-apis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Engineer UI Internal APIs
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Engineer UI Internal APIs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-dashboard-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Dashboard Data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-component-detail" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Component Detail
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-station-detail" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Station Detail
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-trend-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 Trend Data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55-health-and-integration-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5 Health and Integration Status
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-main-api-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Main API Integration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-data-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Data Flow
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Data Flow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-dashboard-load" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 Dashboard Load
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-component-click" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 Component Click
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-station-detail" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 Station Detail
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74-read-only-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.4 Read-only Behavior
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-status-and-threshold-logic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Status and Threshold Logic
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Status and Threshold Logic">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-state-mapping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 State Mapping
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-metric-first-classification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 Metric-first Classification
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-current-ui-thresholds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 Current UI Thresholds
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84-station-aggregation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 Station Aggregation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85-summary-aggregation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5 Summary Aggregation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-diagnosis-and-recommendation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Diagnosis and Recommendation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Diagnosis and Recommendation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-preferred-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 Preferred Source
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-current-fallback-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 Current Fallback Behavior
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-process-parameters-and-spray-width-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Process Parameters and Spray Width Image
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Process Parameters and Spray Width Image">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101-process-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1 Process Parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102-spray-width-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2 Spray Width Image
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-trend-chart" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Trend Chart
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. Trend Chart">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111-chart-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.1 Chart Components
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-trend-data-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.2 Trend Data Generation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113-trend-post-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.3 Trend Post-processing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#114-svg-rendering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.4 SVG Rendering
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#115-request-race-protection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.5 Request Race Protection
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-time-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Time Mode
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="12. Time Mode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#121-ui-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.1 UI Definition
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#122-current-backend-interpretation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.2 Current Backend Interpretation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-batch-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Batch Mode
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-past-current-and-future-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Past, Current and Future Data
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14. Past, Current and Future Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#141-past-current" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.1 Past / Current
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#142-data-anchor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.2 Data Anchor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#143-future-prediction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.3 Future Prediction
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-timestamp-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. Timestamp Handling
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="15. Timestamp Handling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#151-display-timestamp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15.1 Display Timestamp
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#152-data-timestamp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15.2 Data Timestamp
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#153-trend-timestamp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15.3 Trend Timestamp
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-data-quality" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16. Data Quality
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-error-handling-and-fallback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17. Error Handling and Fallback
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="17. Error Handling and Fallback">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#171-database-offline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.1 Database Offline
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#172-summary-api-failure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.2 Summary API Failure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#173-station-detail-failure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.3 Station Detail Failure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#174-component-detail-failure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.4 Component Detail Failure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#175-no-demo-fallback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.5 No Demo Fallback
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-refresh-cache-and-request-volume" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18. Refresh, Cache and Request Volume
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="18. Refresh, Cache and Request Volume">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#181-refresh-interval" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18.1 Refresh Interval
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#182-server-cache" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18.2 Server Cache
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#183-dashboard-request-volume" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18.3 Dashboard Request Volume
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19-docker-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        19. Docker Deployment
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="19. Docker Deployment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#191-startup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        19.1 Startup
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20-active-and-legacy-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20. Active and Legacy Files
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="20. Active and Legacy Files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#201-active-runtime-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.1 Active Runtime Files
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#202-present-but-not-active" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.2 Present but Not Active
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21-engineer-task-workflow-boundary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        21. Engineer Task Workflow Boundary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22-known-version-and-documentation-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22. Known Version and Documentation Notes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23-known-limitations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        23. Known Limitations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="23. Known Limitations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#231-time-slider-unit-mismatch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        23.1 Time Slider Unit Mismatch
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#232-ui-and-backend-thresholds-are-different" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        23.2 UI and Backend Thresholds Are Different
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#233-trend-is-a-processed-display-curve" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        23.3 Trend Is a Processed Display Curve
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#234-troubleshooting-uses-local-fallback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        23.4 Troubleshooting Uses Local Fallback
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#235-spray-width-target-range-mismatch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        23.5 Spray Width Target Range Mismatch
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#236-data-quality-is-not-exposed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        23.6 Data Quality Is Not Exposed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#237-request-volume" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        23.7 Request Volume
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#238-integration-status-text-difference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        23.8 Integration Status Text Difference
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#239-no-engineer-dashboard-specific-automated-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        23.9 No Engineer Dashboard-specific Automated Tests
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2310-runtime-visual-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        23.10 Runtime Visual Verification
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24-implementation-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        24. Implementation References
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#25-short-system-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        25. Short System Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SL-Manager-UI_1015_v1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    a2. Manager User Interface
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SL-WS_1014_v1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    b. Web Service
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SL-DB_1014_v1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    c. Database
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SL-KM_1015_v1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    d. Knowledge Management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contact
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-system-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. System Architecture
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. System Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-active-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Active Components
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-page-layout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Page Layout
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Page Layout">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-header" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Header
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-summary-cards" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Summary Cards
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-integration-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Integration Status
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-station-area" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Station Area
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-time-point-viewer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.5 Time Point Viewer
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-station-and-component-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Station and Component Model
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-engineer-ui-internal-apis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Engineer UI Internal APIs
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Engineer UI Internal APIs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-dashboard-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Dashboard Data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-component-detail" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Component Detail
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-station-detail" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Station Detail
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-trend-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.4 Trend Data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#55-health-and-integration-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.5 Health and Integration Status
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-main-api-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Main API Integration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-data-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Data Flow
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Data Flow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-dashboard-load" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 Dashboard Load
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-component-click" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 Component Click
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-station-detail" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 Station Detail
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74-read-only-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.4 Read-only Behavior
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-status-and-threshold-logic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Status and Threshold Logic
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Status and Threshold Logic">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#81-state-mapping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 State Mapping
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#82-metric-first-classification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 Metric-first Classification
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#83-current-ui-thresholds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 Current UI Thresholds
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#84-station-aggregation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 Station Aggregation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85-summary-aggregation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5 Summary Aggregation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-diagnosis-and-recommendation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Diagnosis and Recommendation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Diagnosis and Recommendation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#91-preferred-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.1 Preferred Source
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#92-current-fallback-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9.2 Current Fallback Behavior
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-process-parameters-and-spray-width-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Process Parameters and Spray Width Image
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Process Parameters and Spray Width Image">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#101-process-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.1 Process Parameters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#102-spray-width-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10.2 Spray Width Image
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-trend-chart" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Trend Chart
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. Trend Chart">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#111-chart-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.1 Chart Components
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#112-trend-data-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.2 Trend Data Generation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#113-trend-post-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.3 Trend Post-processing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#114-svg-rendering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.4 SVG Rendering
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#115-request-race-protection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11.5 Request Race Protection
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-time-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Time Mode
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="12. Time Mode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#121-ui-definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.1 UI Definition
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#122-current-backend-interpretation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12.2 Current Backend Interpretation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-batch-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Batch Mode
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-past-current-and-future-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Past, Current and Future Data
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="14. Past, Current and Future Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#141-past-current" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.1 Past / Current
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#142-data-anchor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.2 Data Anchor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#143-future-prediction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14.3 Future Prediction
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-timestamp-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. Timestamp Handling
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="15. Timestamp Handling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#151-display-timestamp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15.1 Display Timestamp
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#152-data-timestamp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15.2 Data Timestamp
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#153-trend-timestamp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15.3 Trend Timestamp
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#16-data-quality" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16. Data Quality
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#17-error-handling-and-fallback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17. Error Handling and Fallback
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="17. Error Handling and Fallback">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#171-database-offline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.1 Database Offline
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#172-summary-api-failure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.2 Summary API Failure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#173-station-detail-failure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.3 Station Detail Failure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#174-component-detail-failure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.4 Component Detail Failure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#175-no-demo-fallback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17.5 No Demo Fallback
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#18-refresh-cache-and-request-volume" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18. Refresh, Cache and Request Volume
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="18. Refresh, Cache and Request Volume">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#181-refresh-interval" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18.1 Refresh Interval
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#182-server-cache" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18.2 Server Cache
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#183-dashboard-request-volume" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18.3 Dashboard Request Volume
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#19-docker-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        19. Docker Deployment
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="19. Docker Deployment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#191-startup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        19.1 Startup
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20-active-and-legacy-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20. Active and Legacy Files
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="20. Active and Legacy Files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#201-active-runtime-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.1 Active Runtime Files
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#202-present-but-not-active" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20.2 Present but Not Active
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21-engineer-task-workflow-boundary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        21. Engineer Task Workflow Boundary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22-known-version-and-documentation-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22. Known Version and Documentation Notes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23-known-limitations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        23. Known Limitations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="23. Known Limitations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#231-time-slider-unit-mismatch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        23.1 Time Slider Unit Mismatch
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#232-ui-and-backend-thresholds-are-different" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        23.2 UI and Backend Thresholds Are Different
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#233-trend-is-a-processed-display-curve" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        23.3 Trend Is a Processed Display Curve
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#234-troubleshooting-uses-local-fallback" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        23.4 Troubleshooting Uses Local Fallback
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#235-spray-width-target-range-mismatch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        23.5 Spray Width Target Range Mismatch
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#236-data-quality-is-not-exposed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        23.6 Data Quality Is Not Exposed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#237-request-volume" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        23.7 Request Volume
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#238-integration-status-text-difference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        23.8 Integration Status Text Difference
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#239-no-engineer-dashboard-specific-automated-tests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        23.9 No Engineer Dashboard-specific Automated Tests
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2310-runtime-visual-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        23.10 Runtime Visual Verification
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24-implementation-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        24. Implementation References
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#25-short-system-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        25. Short System Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="spray-line-engineer-ui">Spray Line Engineer UI</h1>
+<p>本頁整理 Spray Line 專案目前 Engineer UI 的實際架構、畫面功能、前後端模組、API 串接、資料來源、狀態判斷、異常診斷、趨勢圖、時間／批次檢視，以及 Docker 部署與目前已知限制。</p>
+<p>本文件以 <code>final_version_0715</code> 內目前實際執行的程式為主要依據。<code>backup_before_v17</code>、<code>backup_before_v18</code>、<code>backup_before_v21</code> 與未被 Active Dependency 載入的 Local Demo Data Service，屬於歷史或相容程式，不作為目前主架構。</p>
+<blockquote>
+<p>目前 Engineer UI 的主要定位是「產線監控、設備狀態診斷與趨勢檢視」。UI 查詢流程為 Read-only，不會因為開啟 Dashboard 或查看 Detail 就寫回 Database。Manager → Engineer 的派工、通知、確認與回報流程是另一組擴充功能，目前尚未整合進這個 Engineer Dashboard。</p>
+</blockquote>
+<hr />
+<h2 id="1-overview">1. Overview</h2>
+<p>目前 Engineer UI 版本標示為：</p>
+<pre><code class="language-text">UI_V29 Engineer Integrated
+</code></pre>
+<p>Engineer UI 使用 FastAPI 提供 HTML、CSS、JavaScript 與 UI 專用 API。Docker 啟動後，預設位址為：</p>
+<pre><code class="language-text">http://localhost:8013
+</code></pre>
+<p>Engineer UI 在整個系統中的角色是：</p>
+<ul>
+<li>顯示三個噴塗 Station 的目前狀態</li>
+<li>顯示每站六個主要 Component 的數值與狀態</li>
+<li>依 Sensor Threshold 將數值分類成 Normal、Warning 或 Fault</li>
+<li>顯示零件或整站的問題說明、可能原因與處理建議</li>
+<li>顯示製程參數與噴幅示意圖</li>
+<li>顯示過去、現在與未來的 Component Trend</li>
+<li>提供 Time Mode 與 Batch Mode</li>
+<li>顯示 UI、Main API、Webservices 與 PostgreSQL 的連線狀態</li>
+<li>每 15 秒更新目前畫面</li>
+</ul>
+<p>目前主要 Engineer UI 程式位於：</p>
+<pre><code class="language-text">final_version_0715/
+└── ui/
+    └── engineer/
+        ├── main.py
+        ├── VERSION.txt
+        ├── requirements.txt
+        ├── config/
+        │   ├── sensor_thresholds.json
+        │   ├── sensor_event_mapping.json
+        │   └── local_ui_reference.json
+        └── app/
+            ├── dependencies.py
+            ├── routers/
+            │   ├── dashboard.py
+            │   ├── detail.py
+            │   └── trend.py
+            ├── services/
+            │   ├── dashboard_service.py
+            │   ├── webservices_client.py
+            │   ├── rules_service.py
+            │   ├── diagnosis_service.py
+            │   ├── api_data_service.py
+            │   └── local_data_service.py
+            ├── templates/
+            │   └── dashboard.html
+            └── static/
+                ├── dashboard.js
+                ├── trend_chart.js
+                └── dashboard.css
+</code></pre>
+<hr />
+<h2 id="2-system-architecture">2. System Architecture</h2>
+<p>目前 Engineer UI 是一個獨立 FastAPI Web Application。Browser 不會直接呼叫 PostgreSQL，也不會直接呼叫 Main API，而是先呼叫 Engineer UI 自己的 API，再由 Engineer UI Server 轉接 Main API。</p>
+<pre><code class="language-text">User Browser
+    ↓
+Engineer UI :8013
+    ├── HTML / CSS / JavaScript
+    └── GET /api/dashboard-data
+        GET /api/component-detail
+        GET /api/station-detail
+        GET /api/trend-data
+            ↓
+    DashboardService / WebservicesClient
+            ↓ HTTP
+Main API :8011
+    ├── GET  /api/health
+    ├── GET  /api/database/status
+    ├── POST /api/time-series/ui/summary
+    ├── POST /api/time-series/ui/station-detail
+    └── POST /api/time-series/ui/component-detail
+            ↓
+IntegratedSprayLineService
+            ↓
+PostgreSQL
+    ├── sensor_1min
+    ├── sensor_3min
+    └── batch_run
+</code></pre>
+<h3 id="21-active-components">2.1 Active Components</h3>
+<p><strong>Engineer UI Application</strong></p>
+<pre><code class="language-text">ui/engineer/main.py
+</code></pre>
+<p>負責建立 FastAPI App、掛載 Static Files、註冊 Router、回傳首頁，以及提供 Health 與 Integration Status。</p>
+<p><strong>Engineer UI Dashboard Service</strong></p>
+<pre><code class="language-text">ui/engineer/app/services/dashboard_service.py
+</code></pre>
+<p>負責把 Main API Response 轉成 Engineer Dashboard 需要的資料格式，並處理：</p>
+<ul>
+<li>三站資料組合</li>
+<li>六個 Component 數值與狀態</li>
+<li>Station Overall State</li>
+<li>Summary Count</li>
+<li>Diagnosis Fallback</li>
+<li>Trend 多時間點取樣</li>
+<li>Timestamp Display Mapping</li>
+<li>API Response Cache</li>
+</ul>
+<p><strong>Webservices Client</strong></p>
+<pre><code class="language-text">ui/engineer/app/services/webservices_client.py
+</code></pre>
+<p>負責透過 HTTP 呼叫 Main API。Docker 中使用：</p>
+<pre><code class="language-text">WEBSERVICES_URL=http://api:8000
+WEBSERVICES_SOURCE_MODE=integrated
+</code></pre>
+<p><strong>Main API UI Adapter</strong></p>
+<pre><code class="language-text">api/api_server.py
+api/shaoyu_ui_bridge.py
+</code></pre>
+<p><code>api_server.py</code> 提供 UI 專用 POST Endpoint；<code>shaoyu_ui_bridge.py</code> 將 Integrated Service Output 轉成 Summary、Station Detail 與 Component Detail 格式。</p>
+<p><strong>Integrated Service</strong></p>
+<pre><code class="language-text">services/integrated_service/sprayline_integrated_service.py
+</code></pre>
+<p>負責從正式 Database 讀取 Sensor Data、建立 Current Snapshot、查詢 Batch、衍生品質指標，以及建立 Future Prediction Payload。</p>
+<hr />
+<h2 id="3-page-layout">3. Page Layout</h2>
+<p>Engineer UI 首頁由下列四個主要區域組成。</p>
+<h3 id="31-header">3.1 Header</h3>
+<p>Header 顯示：</p>
+<pre><code class="language-text">噴塗產線監控系統
+SprayingLineMonitoringSystem · UI_V29 Engineer Integrated
+最後更新時間
+Webservices / Database 狀態 Badge
+</code></pre>
+<h3 id="32-summary-cards">3.2 Summary Cards</h3>
+<p>上方四張 Summary Card 顯示：</p>
+<table>
+<thead>
+<tr>
+<th>Card</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>總站數 TotalStations</td>
+<td>目前顯示的 Station 數量</td>
+</tr>
+<tr>
+<td>正常 Normal</td>
+<td>Overall State 為 <code>Running</code> 的 Station 數量</td>
+</tr>
+<tr>
+<td>注意 Warning</td>
+<td>Overall State 為 <code>Maintenance</code> 的 Station 數量</td>
+</tr>
+<tr>
+<td>預測風險 PredictRisk</td>
+<td>Overall State 為 <code>Alarm</code> 的 Station 數量</td>
+</tr>
+</tbody>
+</table>
+<p>Summary Count 不直接採用 Main API 的遠端統計，而是依 Engineer UI 已建立的三張 Station Card 重新計算。</p>
+<h3 id="33-integration-status">3.3 Integration Status</h3>
+<p>Connection Panel 顯示：</p>
+<ul>
+<li>Engineer UI 是否連到 Main API</li>
+<li>Main API 是否連到 PostgreSQL</li>
+<li>Summary、Station Detail、Component Detail API 是否可用</li>
+<li>Main API Base URL</li>
+<li>API Source Mode</li>
+<li>Database Name</li>
+</ul>
+<p>使用者可按下「重新檢查」執行完整 Integration Status Check。</p>
+<h3 id="34-station-area">3.4 Station Area</h3>
+<p>目前固定顯示三個 Station：</p>
+<table>
+<thead>
+<tr>
+<th>UI ID</th>
+<th>Line ID</th>
+<th>Database Station</th>
+<th>中文名稱</th>
+<th>English Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>M1</code></td>
+<td><code>line_1</code></td>
+<td><code>Station_1</code></td>
+<td>底漆站</td>
+<td>Primer Station</td>
+</tr>
+<tr>
+<td><code>M2</code></td>
+<td><code>line_2</code></td>
+<td><code>Station_2</code></td>
+<td>面漆站</td>
+<td>Topcoat Station</td>
+</tr>
+<tr>
+<td><code>M3</code></td>
+<td><code>line_3</code></td>
+<td><code>Station_3</code></td>
+<td>金漆站</td>
+<td>Gold Paint Station</td>
+</tr>
+</tbody>
+</table>
+<p>每張 Station Card 包含：</p>
+<ul>
+<li>Station Name</li>
+<li>Overall State Badge</li>
+<li>六個 Component Card</li>
+<li>Station Fault Detail Button</li>
+<li>Process Parameters Panel</li>
+<li>Spray Width Image Panel</li>
+<li>Trend Chart Panel</li>
+</ul>
+<h3 id="35-time-point-viewer">3.5 Time Point Viewer</h3>
+<p>畫面底部提供單一時間點檢視：</p>
+<pre><code class="language-text">Time Mode
+Batch Mode
+Back To Live
+Past / Now / Future Indicator
+Range Slider
+Selected Time Description
+</code></pre>
+<p>在 <code>slider_value = 0</code> 時，UI 每 15 秒自動更新。使用者切換到過去或未來時間點後，自動更新會暫停，以免歷史檢視被最新資料覆蓋。</p>
+<hr />
+<h2 id="4-station-and-component-model">4. Station and Component Model</h2>
+<p>每個 Station 固定顯示六個主要 Component。</p>
+<table>
+<thead>
+<tr>
+<th>UI Key</th>
+<th>Service Component</th>
+<th>Component ID</th>
+<th>Display Name</th>
+<th>Primary Metric</th>
+<th>Unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>arm</code></td>
+<td><code>robot_arm</code></td>
+<td><code>ROBOT_ARM</code></td>
+<td>機械手臂</td>
+<td><code>servo_torque_load_pct</code></td>
+<td><code>%</code></td>
+</tr>
+<tr>
+<td><code>nozzle</code></td>
+<td><code>nozzle</code></td>
+<td><code>NOZZLE</code></td>
+<td>噴嘴</td>
+<td><code>paint_flow_ml_min</code></td>
+<td><code>ml/min</code></td>
+</tr>
+<tr>
+<td><code>air</code></td>
+<td><code>air_compressor</code></td>
+<td><code>AIR_COMPRESSOR</code></td>
+<td>空壓機</td>
+<td><code>air_pressure_bar</code></td>
+<td><code>bar</code></td>
+</tr>
+<tr>
+<td><code>width</code></td>
+<td><code>spray_width</code></td>
+<td><code>SPRAY_WIDTH</code></td>
+<td>噴幅</td>
+<td><code>spray_width_mm</code></td>
+<td><code>mm</code></td>
+</tr>
+<tr>
+<td><code>filter</code></td>
+<td><code>filter_mesh</code></td>
+<td><code>FILTER</code></td>
+<td>濾網</td>
+<td><code>filter_diff_pressure_bar</code></td>
+<td><code>bar</code></td>
+</tr>
+<tr>
+<td><code>quality</code></td>
+<td><code>quality_module</code></td>
+<td><code>QUALITY</code></td>
+<td>品質</td>
+<td><code>film_thickness_um</code></td>
+<td><code>µm</code></td>
+</tr>
+</tbody>
+</table>
+<p>每個 Component Card 顯示：</p>
+<pre><code class="language-text">Icon
+中文名稱
+英文名稱
+Primary Metric Value
+正常 / 注意 / 異常
+點擊查看狀態、原因與趨勢
+</code></pre>
+<hr />
+<h2 id="5-engineer-ui-internal-apis">5. Engineer UI Internal APIs</h2>
+<p>Engineer UI 自己提供四個主要 GET Endpoint。</p>
+<h3 id="51-dashboard-data">5.1 Dashboard Data</h3>
+<pre><code class="language-http">GET /api/dashboard-data?mode=time&amp;slider_value=0
+</code></pre>
+<p>用途：</p>
+<ul>
+<li>取得 Database Status</li>
+<li>呼叫 Summary API</li>
+<li>呼叫三次 Station Detail API</li>
+<li>呼叫三站 × 六元件的 Component Detail API</li>
+<li>建立 Station Cards</li>
+<li>重新計算 Summary</li>
+</ul>
+<h3 id="52-component-detail">5.2 Component Detail</h3>
+<pre><code class="language-http">GET /api/component-detail
+    ?station_id=M1
+    &amp;component_key=filter
+    &amp;mode=time
+    &amp;slider_value=0
+    &amp;snapshot_seed=...
+</code></pre>
+<p>用途：顯示單一 Component 的目前數值、狀態、問題、原因、處理建議與 Mapping ID。</p>
+<h3 id="53-station-detail">5.3 Station Detail</h3>
+<pre><code class="language-http">GET /api/station-detail
+    ?station_id=M1
+    &amp;mode=time
+    &amp;slider_value=0
+    &amp;snapshot_seed=...
+</code></pre>
+<p>用途：重新呼叫 Station Detail 及六個 Component Detail，列出該站所有非正常 Component。</p>
+<h3 id="54-trend-data">5.4 Trend Data</h3>
+<pre><code class="language-http">GET /api/trend-data
+    ?station_id=M1
+    &amp;component_key=filter
+    &amp;mode=time
+    &amp;slider_value=0
+    &amp;snapshot_seed=...
+</code></pre>
+<p>用途：取得 Trend Points、Threshold Reference、Selected Snapshot 與 Chart Metadata。</p>
+<h3 id="55-health-and-integration-status">5.5 Health and Integration Status</h3>
+<pre><code class="language-http">GET /api/health
+GET /api/integration-status
+</code></pre>
+<p><code>/api/health</code> 回傳 Engineer UI Version 與主要 Integration Route；<code>/api/integration-status</code> 會實際檢查 Main API、Database 與三個 UI Service API。</p>
+<hr />
+<h2 id="6-main-api-integration">6. Main API Integration</h2>
+<p>Engineer UI 透過 <code>WebservicesClient</code> 呼叫 Main API：</p>
+<pre><code class="language-text">GET  /api/health
+GET  /api/database/status
+POST /api/time-series/ui/summary
+POST /api/time-series/ui/station-detail
+POST /api/time-series/ui/component-detail
+</code></pre>
+<p>共用 Request Payload 主要包含：</p>
+<pre><code class="language-text">schema_version
+request_id
+mode
+window_type
+slider_value
+ui_slider_value
+ui_slider_unit
+source_mode
+random_seed
+line_scope / line_id
+component_name
+</code></pre>
+<p>Main API 會強制把 UI Query 設為：</p>
+<pre><code class="language-text">source_mode = integrated
+</code></pre>
+<p>並執行：</p>
+<pre><code class="language-text">run_integrated_service_query(..., write_back=False)
+</code></pre>
+<p>因此目前 Summary、Station Detail、Component Detail 與 Trend Query 都是 Read-only。</p>
+<hr />
+<h2 id="7-data-flow">7. Data Flow</h2>
+<h3 id="71-dashboard-load">7.1 Dashboard Load</h3>
+<pre><code class="language-text">Browser GET /api/dashboard-data
+       ↓
+Engineer DashboardService
+       ├── GET Database Status
+       ├── POST Summary
+       ├── POST Station Detail × 3
+       └── POST Component Detail × 18
+                 ↓
+       Build Component Cards
+                 ↓
+       Aggregate Station State
+                 ↓
+       Recalculate Summary
+                 ↓
+       Browser Render
+</code></pre>
+<h3 id="72-component-click">7.2 Component Click</h3>
+<pre><code class="language-text">Click Component Card
+       ↓
+GET Engineer /api/component-detail
+       ↓
+POST Main API component-detail
+       ↓
+Update Component Value and State
+       ↓
+Update Station Overall State
+       ↓
+Update Top Summary Count
+       ↓
+Open Component Diagnosis
+       ↓
+Open Matching Trend Chart
+</code></pre>
+<h3 id="73-station-detail">7.3 Station Detail</h3>
+<pre><code class="language-text">Click FaultDetail / NoFault
+       ↓
+GET Engineer /api/station-detail
+       ↓
+POST Station Detail
+POST Component Detail × 6
+       ↓
+Filter level != ok
+       ↓
+Display all Warning / Fault components
+</code></pre>
+<h3 id="74-read-only-behavior">7.4 Read-only Behavior</h3>
+<p>Engineer UI Query 不會執行：</p>
+<pre><code class="language-text">insert_alert_event
+upsert_batch_station_status
+insert_future_prediction_result
+</code></pre>
+<p>Database Write-back 必須由其他明確的 Service Orchestration Endpoint 或 Monitoring Worker 執行。</p>
+<hr />
+<h2 id="8-status-and-threshold-logic">8. Status and Threshold Logic</h2>
+<h3 id="81-state-mapping">8.1 State Mapping</h3>
+<p>Engineer UI 使用：</p>
+<pre><code class="language-text">normal  → ok
+warning → warn
+fault   → bad
+</code></pre>
+<p>畫面顏色：</p>
+<table>
+<thead>
+<tr>
+<th>UI Level</th>
+<th>Display</th>
+<th>Color</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ok</code></td>
+<td>正常</td>
+<td>Green</td>
+</tr>
+<tr>
+<td><code>warn</code></td>
+<td>注意</td>
+<td>Orange</td>
+</tr>
+<tr>
+<td><code>bad</code></td>
+<td>異常</td>
+<td>Red</td>
+</tr>
+</tbody>
+</table>
+<h3 id="82-metric-first-classification">8.2 Metric-first Classification</h3>
+<p>Component Status 的實際優先順序是：</p>
+<pre><code class="language-text">Main API Metric Value
+       ↓
+Engineer UI sensor_thresholds.json
+       ↓
+normal / warning / fault
+</code></pre>
+<p>只有在主要 Metric 不存在時，才會嘗試使用 Main API 的 <code>component_state</code>。如果 Primary Metric 完全不存在，UI 會將該 Component 標成 Warning，避免無資料時誤顯示為正常。</p>
+<h3 id="83-current-ui-thresholds">8.3 Current UI Thresholds</h3>
+<table>
+<thead>
+<tr>
+<th>Sensor</th>
+<th>Normal</th>
+<th>Warning</th>
+<th>Fault</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>filter_diff_pressure_bar</code></td>
+<td><code>0–0.30</code></td>
+<td><code>&gt;0.30–0.50</code></td>
+<td><code>&gt;0.50</code></td>
+</tr>
+<tr>
+<td><code>servo_torque_load_pct</code></td>
+<td><code>0–50</code></td>
+<td><code>&gt;50–60</code></td>
+<td><code>&gt;60</code></td>
+</tr>
+<tr>
+<td><code>air_pressure_bar</code></td>
+<td><code>3.0–3.35</code></td>
+<td><code>2.8–&lt;3.0</code> or <code>&gt;3.35–3.6</code></td>
+<td><code>&lt;2.8</code> or <code>&gt;3.6</code></td>
+</tr>
+<tr>
+<td><code>paint_flow_ml_min</code></td>
+<td><code>105–118</code></td>
+<td><code>100–&lt;105</code> or <code>&gt;118–125</code></td>
+<td><code>&lt;100</code> or <code>&gt;125</code></td>
+</tr>
+<tr>
+<td><code>spray_width_mm</code></td>
+<td><code>75–125</code></td>
+<td><code>65–&lt;75</code> or <code>&gt;125–135</code></td>
+<td><code>&lt;65</code> or <code>&gt;135</code></td>
+</tr>
+<tr>
+<td><code>film_thickness_um</code></td>
+<td><code>14.6–15.4</code></td>
+<td><code>14.2–&lt;14.6</code> or <code>&gt;15.4–15.8</code></td>
+<td><code>&lt;14.2</code> or <code>&gt;15.8</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="84-station-aggregation">8.4 Station Aggregation</h3>
+<p>Station Overall State 取六個 Component 中最嚴重者：</p>
+<pre><code class="language-text">All Components OK
+    → Running
+
+Any Component Warn, no Bad
+    → Maintenance
+
+Any Component Bad
+    → Alarm
+</code></pre>
+<p>Risk Text 對應：</p>
+<pre><code class="language-text">Running     → 低風險
+Maintenance → 中風險
+Alarm       → 高風險
+</code></pre>
+<h3 id="85-summary-aggregation">8.5 Summary Aggregation</h3>
+<p>上方 Summary 依 Station Card 重新計算：</p>
+<pre><code class="language-text">normal_count       = Running Station Count
+warning_count      = Maintenance Station Count
+predict_risk_count = Alarm Station Count
+</code></pre>
+<p>這樣可以避免遠端 Summary 仍顯示 Normal，但 Component Detail 已經出現 Warning 或 Fault 時，Station Header 與 Summary 仍保持綠色。</p>
+<hr />
+<h2 id="9-diagnosis-and-recommendation">9. Diagnosis and Recommendation</h2>
+<h3 id="91-preferred-source">9.1 Preferred Source</h3>
+<p>如果 Service API Response 有 <code>troubleshooting</code>，Engineer UI 會優先使用：</p>
+<pre><code class="language-text">state_name / state_description
+cause
+countermeasure
+countermeasure_id
+troubleshooting_state
+cause_id
+</code></pre>
+<h3 id="92-current-fallback-behavior">9.2 Current Fallback Behavior</h3>
+<p>目前 <code>shaoyu_ui_bridge.py</code> 的 Component Detail Output 沒有輸出 <code>troubleshooting</code>，因此現有流程通常會使用 Engineer UI 本機 Fallback：</p>
+<pre><code class="language-text">Sensor Name
+    ↓
+sensor_event_mapping.json
+    ↓
+issue_state / cause_id / response_ids
+    ↓
+diagnosis_service.py
+    ↓
+問題說明 / 可能原因 / 處理建議
+</code></pre>
+<p>代表性 Mapping：</p>
+<table>
+<thead>
+<tr>
+<th>Sensor</th>
+<th>Issue State</th>
+<th>Cause</th>
+<th>Response</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>filter_diff_pressure_bar</code></td>
+<td><code>FILTER_CLOG</code></td>
+<td><code>FILTER_CLOG</code></td>
+<td><code>REPLACE_FILTER</code>, <code>BACKWASH_FILTER</code></td>
+</tr>
+<tr>
+<td><code>paint_flow_ml_min</code></td>
+<td><code>NOZZLE_CLOG</code></td>
+<td><code>NOZZLE_CLOG</code></td>
+<td><code>CLEAN_NOZZLE</code>, <code>REPLACE_NOZZLE</code></td>
+</tr>
+<tr>
+<td><code>air_pressure_bar</code></td>
+<td><code>AIR_PRESSURE_UNSTABLE</code></td>
+<td><code>AIR_PRESSURE_UNSTABLE</code></td>
+<td><code>CALIBRATE_PRESSURE_VALVE</code></td>
+</tr>
+<tr>
+<td><code>spray_width_mm</code></td>
+<td><code>SPRAY_WIDTH_DEVIATION</code></td>
+<td><code>SPRAY_WIDTH_DEVIATION</code></td>
+<td><code>ADJUST_TCP_Z</code>, <code>ADJUST_FLOW_PRESSURE</code>, <code>REPLACE_NOZZLE</code></td>
+</tr>
+<tr>
+<td><code>servo_torque_load_pct</code></td>
+<td><code>SERVO_OVERLOAD</code></td>
+<td><code>SERVO_WEAR</code></td>
+<td><code>LUBRICATE_SERVO</code>, <code>REPLACE_SERVO</code></td>
+</tr>
+<tr>
+<td><code>film_thickness_um</code></td>
+<td><code>FILM_THICKNESS_OOC</code></td>
+<td><code>THICKNESS_DRIFT</code></td>
+<td><code>ADJUST_SPEED_FLOW</code>, <code>CALIBRATE_ENV_CONTROL</code></td>
+</tr>
+</tbody>
+</table>
+<p>目前 <code>sensor_event_mapping.json</code> 自己標示為：</p>
+<pre><code class="language-text">draft_pending_yucheng_confirmation
+</code></pre>
+<p>因此 Cause ID 與 Response ID 應視為目前 Mapping，而不是已完成最終確認的正式知識表。</p>
+<hr />
+<h2 id="10-process-parameters-and-spray-width-image">10. Process Parameters and Spray Width Image</h2>
+<h3 id="101-process-parameters">10.1 Process Parameters</h3>
+<p>每站 Process Panel 顯示：</p>
+<pre><code class="language-text">Recipe
+Temperature
+Humidity
+Utilization
+Cycle Time
+Timestamp
+</code></pre>
+<p>若 Main API 沒有提供欄位，畫面顯示 <code>--</code>。</p>
+<h3 id="102-spray-width-image">10.2 Spray Width Image</h3>
+<p>Engineer UI 使用前端 SVG 畫出噴嘴、噴塗扇形、目標範圍與目前噴幅。</p>
+<p>顏色依 <code>spray_width</code> Component State：</p>
+<pre><code class="language-text">Normal  → Green
+Warning → Orange
+Fault   → Red
+</code></pre>
+<p>如果 Station Detail 沒有提供 <code>target_min_mm</code> / <code>target_max_mm</code>，目前 Fallback 為：</p>
+<pre><code class="language-text">105–125 mm
+</code></pre>
+<p>但目前 <code>sensor_thresholds.json</code> 對 <code>spray_width_mm</code> 的 Normal Range 是：</p>
+<pre><code class="language-text">75–125 mm
+</code></pre>
+<p>因此 Spray Width Image 顯示的目標範圍與 Component Status 判斷門檻目前可能不一致。</p>
+<hr />
+<h2 id="11-trend-chart">11. Trend Chart</h2>
+<h3 id="111-chart-components">11.1 Chart Components</h3>
+<p>每站 Trend Panel 提供六個 Tab：</p>
+<pre><code class="language-text">機械手臂
+噴嘴
+空壓機
+噴幅
+濾網
+品質
+</code></pre>
+<p>點擊上方 Component Card 時，會自動切換到對應的 Trend Tab。</p>
+<h3 id="112-trend-data-generation">11.2 Trend Data Generation</h3>
+<p>目前 Trend Chart 不直接顯示 Main API Response 內的一段原始 <code>time_series.points</code>。</p>
+<p>Time Mode 會對下列 Slider Point 逐點呼叫 Component Detail：</p>
+<pre><code class="language-text">-6, -5, -4, -3, -2, -1, 0, +1, +2, +3, +4
+</code></pre>
+<p>Batch Mode 預設取樣：</p>
+<pre><code class="language-text">-10, -8, -6, -4, -2, 0, +2, +4, +6, +8, +10
+</code></pre>
+<p>每一點皆透過 Main API 的 Component Detail Query 取得。</p>
+<h3 id="113-trend-post-processing">11.3 Trend Post-processing</h3>
+<p>取得各時間點後，Engineer UI 會：</p>
+<pre><code class="language-text">1. 將各點轉成 Float
+2. 執行三點 Moving Average
+3. 平移整條曲線，使選中點等於上方 Component Card Value
+4. 保留原始值為 raw_service_value
+5. 限制相鄰點最大變化，避免曲線不連續
+6. 依 UI Threshold 重新分類每一點
+</code></pre>
+<p>因此 Trend Chart 是以 Service API Query 為基礎、經 UI 平滑處理後的顯示曲線，不是 Database Raw Time-series 的完全原樣輸出。</p>
+<h3 id="114-svg-rendering">11.4 SVG Rendering</h3>
+<p>前端 <code>trend_chart.js</code> 使用 SVG 顯示：</p>
+<table>
+<thead>
+<tr>
+<th>Visual</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>灰色實線</td>
+<td>Past and Current</td>
+</tr>
+<tr>
+<td>紫色虛線</td>
+<td>Future Prediction</td>
+</tr>
+<tr>
+<td>綠點</td>
+<td>Normal</td>
+</tr>
+<tr>
+<td>橘點</td>
+<td>Warning</td>
+</tr>
+<tr>
+<td>紅點</td>
+<td>Fault</td>
+</tr>
+<tr>
+<td>黑色垂直虛線</td>
+<td>Now</td>
+</tr>
+<tr>
+<td>藍色垂直虛線及藍圈</td>
+<td>Selected Snapshot</td>
+</tr>
+<tr>
+<td>淡綠色區域</td>
+<td>Normal Threshold Band</td>
+</tr>
+</tbody>
+</table>
+<h3 id="115-request-race-protection">11.5 Request Race Protection</h3>
+<p>前端會為 Dashboard 與 Trend Request 保存 Request Sequence。若使用者快速移動 Slider，較舊的 Response 即使較晚回來，也不會覆蓋較新的畫面。</p>
+<hr />
+<h2 id="12-time-mode">12. Time Mode</h2>
+<h3 id="121-ui-definition">12.1 UI Definition</h3>
+<p>Time Mode Slider：</p>
+<pre><code class="language-text">min  = -6
+max  = +4
+step = 1
+</code></pre>
+<p>畫面標示：</p>
+<pre><code class="language-text">-6 → 過去 6 小時
+ 0 → 現在
++4 → 未來 2 小時
+</code></pre>
+<p>Engineer UI 的 Display Label 規則是：</p>
+<pre><code class="language-text">負值：每格顯示為 1 小時
+正值：每格顯示為 0.5 小時
+</code></pre>
+<h3 id="122-current-backend-interpretation">12.2 Current Backend Interpretation</h3>
+<p><code>WebservicesClient</code> 目前將 Slider 原值直接送到 Main API。</p>
+<p>但是 <code>IntegratedSprayLineService.build_time_window()</code> 實際使用：</p>
+<pre><code class="language-text">Past:
+anchor_time = now - abs(slider_value) minutes
+
+Future:
+prediction_time = now + slider_value minutes
+</code></pre>
+<p>也就是目前存在 Unit Mismatch：</p>
+<pre><code class="language-text">UI 顯示：小時
+Backend 查詢：分鐘
+</code></pre>
+<p>例如 UI 顯示「過去 6 小時」時，Main API 目前實際使用的 Offset 可能是「過去 6 分鐘」。</p>
+<p>這是目前 Time Mode 最重要的已知限制。</p>
+<hr />
+<h2 id="13-batch-mode">13. Batch Mode</h2>
+<p>Batch Mode Slider：</p>
+<pre><code class="language-text">min  = -10
+max  = +10
+step = 1
+</code></pre>
+<p>顯示方式：</p>
+<pre><code class="language-text">slider = 0  → 目前批次
+slider &lt; 0  → 過去第 N 批
+slider &gt; 0  → 未來第 N 批
+</code></pre>
+<p>Integrated Service 會查詢：</p>
+<pre><code class="language-text">batch_run
+JOIN sensor_1min
+</code></pre>
+<p>並只選擇實際在該 Station 有 Sensor Data 的 Batch。</p>
+<p>Past Batch 會查詢選定 Batch 的：</p>
+<pre><code class="language-text">sensor_1min
+sensor_3min
+</code></pre>
+<p>Future Batch 目前仍以 Anchor Batch／Latest Batch 作為 Model Input，再建立 Future Prediction Payload。</p>
+<p>Engineer UI Request 目前沒有傳送固定的 <code>anchor_batch_id</code>，因此 DataProcess 持續新增 Batch 時，最新 Batch Anchor 可能隨更新改變。</p>
+<hr />
+<h2 id="14-past-current-and-future-data">14. Past, Current and Future Data</h2>
+<h3 id="141-past-current">14.1 Past / Current</h3>
+<p>Past 與 Current 的正式資料來源為：</p>
+<pre><code class="language-text">Database/versionB sensor_1min
+Database/versionB sensor_3min
+</code></pre>
+<p>Current Snapshot 使用：</p>
+<pre><code class="language-text">Latest sensor_1min row
++
+Latest sensor_3min temperature_c / humidity_rh
+</code></pre>
+<h3 id="142-data-anchor">14.2 Data Anchor</h3>
+<p>DataProcess 使用自己的模擬時間軸，Database 最新資料時間可能與電腦現在時間不同，甚至已經位於未來年份。</p>
+<p>因此 Integrated Service 會讀取各站最新 <code>sensor_1min.ts</code>，以 Database 最新時間作為 Data Anchor。</p>
+<h3 id="143-future-prediction">14.3 Future Prediction</h3>
+<p>目前 Future Prediction 使用 deterministic formula，不是已訓練完成的正式 Machine Learning Model。</p>
+<p>主要邏輯：</p>
+<pre><code class="language-text">Current Snapshot
+    ↓
+Quality Score
+    ↓
+依 Prediction Distance 套用品質衰退
+    ↓
+predicted_ok_rate
+estimated_defect_rate_pct
+predicted_ng_count
+</code></pre>
+<p>目前 <code>prediction_method</code> 為：</p>
+<pre><code class="language-text">deterministic_formula
+</code></pre>
+<p><code>model_input_source</code> 為：</p>
+<pre><code class="language-text">IntegratedSprayLineService:past_current_window
+</code></pre>
+<p>正式模型可日後替換，但目前文件不應將這一段描述成正式 AI／ML Prediction Model。</p>
+<hr />
+<h2 id="15-timestamp-handling">15. Timestamp Handling</h2>
+<p>UI_V29 為了處理 Database 模擬時間與使用者電腦時間不一致，將時間拆成兩種語意。</p>
+<h3 id="151-display-timestamp">15.1 Display Timestamp</h3>
+<p>Station Card 與 Process Panel 顯示：</p>
+<pre><code class="language-text">viewer / slider selected time
+</code></pre>
+<p>此時間跟隨使用者目前電腦時間與 Slider Label。</p>
+<h3 id="152-data-timestamp">15.2 Data Timestamp</h3>
+<p>原始 PostgreSQL Timestamp 保存在：</p>
+<pre><code class="language-text">station.data_timestamp
+process_parameters.data_timestamp
+viewer_state.data_anchor_time
+</code></pre>
+<p>這樣畫面不會直接顯示 2029 或 2032 等模擬時間，但 Response 仍保留原始資料時間供追蹤。</p>
+<h3 id="153-trend-timestamp">15.3 Trend Timestamp</h3>
+<p>Trend Payload 同時保留：</p>
+<pre><code class="language-text">ui_selected_time
+data_anchor_time
+selected_snapshot.timestamp
+selected_snapshot.data_timestamp
+</code></pre>
+<p>目前 Chart Point Timestamp 以取樣流程建立的時間為主，Selected Snapshot 則同時保留 UI 與 Data Time。</p>
+<hr />
+<h2 id="16-data-quality">16. Data Quality</h2>
+<p>Integrated Service 的 Time-series Point 會保留：</p>
+<pre><code class="language-text">data_quality_flag
+</code></pre>
+<p>但是目前 Engineer UI：</p>
+<ul>
+<li>沒有在 Component Card 顯示 Data Quality</li>
+<li>沒有在 Trend Legend 顯示 Normal／Interpolated Data Quality</li>
+<li>沒有在 UI Layer 排除 <code>interpolated</code> Row</li>
+<li>Current Snapshot 直接取查詢範圍內最新 Sensor Row</li>
+</ul>
+<p>因此目前 UI 的綠／橘／紅代表 Threshold State，不代表資料一定是原始量測或已補值資料。</p>
+<hr />
+<h2 id="17-error-handling-and-fallback">17. Error Handling and Fallback</h2>
+<h3 id="171-database-offline">17.1 Database Offline</h3>
+<p>如果 <code>/api/database/status</code> 回傳未連線：</p>
+<pre><code class="language-text">summary = 0
+stations = []
+integration.database_connected = false
+</code></pre>
+<p>畫面顯示 Database 或 Service API Error，不會切換到 Local Demo Data。</p>
+<h3 id="172-summary-api-failure">17.2 Summary API Failure</h3>
+<p>如果 Summary API 失敗，Engineer UI 回傳空 Station List 與 Integration Error。</p>
+<h3 id="173-station-detail-failure">17.3 Station Detail Failure</h3>
+<p>若單一 Station Detail 失敗，UI 會嘗試使用 Summary Station 建立可見的 Fallback Card，並將詳細資料標示為待確認。</p>
+<h3 id="174-component-detail-failure">17.4 Component Detail Failure</h3>
+<p>如果某個 Component Detail 失敗：</p>
+<ul>
+<li>Dashboard 保留該站其他 Component</li>
+<li>保存 <code>component_errors</code></li>
+<li>無主要指標的 Component 可能標成 Warning</li>
+</ul>
+<h3 id="175-no-demo-fallback">17.5 No Demo Fallback</h3>
+<p>Main API 的 Formal UI Endpoint 已明確設定：</p>
+<pre><code class="language-text">fallback_to_demo = False
+</code></pre>
+<p>因此正式 Engineer UI 不會在 Database 斷線時靜默產生假資料。</p>
+<hr />
+<h2 id="18-refresh-cache-and-request-volume">18. Refresh, Cache and Request Volume</h2>
+<h3 id="181-refresh-interval">18.1 Refresh Interval</h3>
+<p>目前 Engineer UI：</p>
+<pre><code class="language-text">AUTO_REFRESH_MS = 15000
+</code></pre>
+<p>只有在：</p>
+<pre><code class="language-text">autoUpdate = true
+slider_value = 0
+</code></pre>
+<p>時自動更新。</p>
+<h3 id="182-server-cache">18.2 Server Cache</h3>
+<p>Dashboard Service 依下列資訊保存 Cache：</p>
+<pre><code class="language-text">snapshot_seed
+mode
+slider_value
+station_id
+component_key
+</code></pre>
+<p>Cache 分為：</p>
+<pre><code class="language-text">station_cache
+component_cache
+trend_cache
+</code></pre>
+<p>Database Status 另有 5 秒 Cache。</p>
+<h3 id="183-dashboard-request-volume">18.3 Dashboard Request Volume</h3>
+<p>一次完整 Dashboard Refresh 大約會執行：</p>
+<pre><code class="language-text">Database Status         × 1
+Summary                 × 1
+Station Detail          × 3
+Component Detail        × 18
+</code></pre>
+<p>也就是約 23 個上游 Request。</p>
+<p>單一 Trend Load 會對約 11 個 Slider Point 進行 Component Detail 取樣。若多站 Trend 同時展開，Refresh 後也會重新載入。</p>
+<p>因此目前設計可提供完整且同步的 Component 資訊，但正式部署時應注意 Main API 與 PostgreSQL 負載。</p>
+<hr />
+<h2 id="19-docker-deployment">19. Docker Deployment</h2>
+<p>目前 <code>docker-compose.yml</code> 相關 Service：</p>
+<table>
+<thead>
+<tr>
+<th>Service</th>
+<th>Role</th>
+<th style="text-align: right;">Host Port</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>db</code></td>
+<td>PostgreSQL</td>
+<td style="text-align: right;"><code>5433 → 5432</code></td>
+</tr>
+<tr>
+<td><code>api</code></td>
+<td>Main API</td>
+<td style="text-align: right;"><code>8011 → 8000</code></td>
+</tr>
+<tr>
+<td><code>frontend</code></td>
+<td>Manager UI</td>
+<td style="text-align: right;"><code>8012 → 8002</code></td>
+</tr>
+<tr>
+<td><code>engineer</code></td>
+<td>Engineer UI</td>
+<td style="text-align: right;"><code>8013 → 8000</code></td>
+</tr>
+</tbody>
+</table>
+<p>Engineer Service：</p>
+<pre><code class="language-text">working_dir = /app/ui/engineer
+command = python -m uvicorn main:app --host 0.0.0.0 --port 8000
+</code></pre>
+<p>主要 Environment：</p>
+<pre><code class="language-text">MANAGER_UI_URL=http://localhost:8012
+SPRAYLINE_API_BASE=http://api:8000
+WEBSERVICES_URL=http://api:8000
+API_BASE_URL=http://api:8000
+WEBSERVICES_SOURCE_MODE=integrated
+</code></pre>
+<p>目前 Active <code>WebservicesClient</code> 實際使用的是：</p>
+<pre><code class="language-text">WEBSERVICES_URL
+WEBSERVICES_SOURCE_MODE
+</code></pre>
+<p><code>SPRAYLINE_API_BASE</code> 只被目前未啟用的 <code>ApiDataService</code> 使用；<code>MANAGER_UI_URL</code> 與 <code>API_BASE_URL</code> 在 Active Engineer UI Path 中沒有被引用。</p>
+<h3 id="191-startup">19.1 Startup</h3>
+<p><code>start.ps1</code> 啟動：</p>
+<pre><code class="language-text">api
+frontend
+engineer
+</code></pre>
+<p>Engineer UI 依賴 Main API，但 Compose 的 <code>depends_on</code> 只保證 Container 啟動順序，不保證所有 API Query 已完成初始化，因此首頁已實作 Connection Status 與 Error Panel。</p>
+<hr />
+<h2 id="20-active-and-legacy-files">20. Active and Legacy Files</h2>
+<h3 id="201-active-runtime-files">20.1 Active Runtime Files</h3>
+<pre><code class="language-text">ui/engineer/main.py
+ui/engineer/app/dependencies.py
+ui/engineer/app/routers/dashboard.py
+ui/engineer/app/routers/detail.py
+ui/engineer/app/routers/trend.py
+ui/engineer/app/services/dashboard_service.py
+ui/engineer/app/services/webservices_client.py
+ui/engineer/app/services/rules_service.py
+ui/engineer/app/services/diagnosis_service.py
+ui/engineer/app/templates/dashboard.html
+ui/engineer/app/static/dashboard.js
+ui/engineer/app/static/trend_chart.js
+ui/engineer/app/static/dashboard.css
+ui/engineer/config/sensor_thresholds.json
+ui/engineer/config/sensor_event_mapping.json
+</code></pre>
+<h3 id="202-present-but-not-active">20.2 Present but Not Active</h3>
+<p>目前沒有被 <code>dependencies.py</code> 或 Active Runtime Import：</p>
+<pre><code class="language-text">ui/engineer/app/services/api_data_service.py
+ui/engineer/app/services/local_data_service.py
+ui/engineer/app/services/backup_before_v17/
+ui/engineer/app/services/backup_before_v18/
+ui/engineer/app/services/backup_before_v21/
+</code></pre>
+<p><code>LocalDataService</code> 可產生本機模擬資料；<code>ApiDataService</code> 是另一個相容 Adapter。但目前實際依賴鏈為：</p>
+<pre><code class="language-text">DashboardService
+    ↓
+WebservicesClient
+    ↓
+Main API
+</code></pre>
+<hr />
+<h2 id="21-engineer-task-workflow-boundary">21. Engineer Task Workflow Boundary</h2>
+<p>Repository 另有 Manager → Engineer Workflow：</p>
+<pre><code class="language-text">api/engineer_task_models.py
+api/engineer_task_service.py
+api/engineer_task_router.py
+database/db_engineer_task.py
+apps_script/engineer_task_web_app.gs
+ui/manager/main/engineer-task-api.js
+ui/manager/main/engineer-ack.js
+</code></pre>
+<p>但目前 <code>ui/engineer/</code> 沒有引用上述模組，因此目前 Engineer Dashboard 不包含：</p>
+<ul>
+<li>Engineer Task Inbox</li>
+<li>Manager 派工通知</li>
+<li>Engineer Acknowledge</li>
+<li>Task Status Update</li>
+<li>Work Report</li>
+<li>Attachment Upload</li>
+</ul>
+<p>這組 Engineer Task Workflow 應視為獨立擴充，不應在 Engineer UI 文件中描述成已整合完成的畫面功能。</p>
+<hr />
+<h2 id="22-known-version-and-documentation-notes">22. Known Version and Documentation Notes</h2>
+<p>目前 Active Engineer UI 內保留多個版本名稱：</p>
+<table>
+<thead>
+<tr>
+<th>Location</th>
+<th>Version Label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>main.py</code> / HTML Title</td>
+<td>UI_V29</td>
+</tr>
+<tr>
+<td><code>VERSION.txt</code></td>
+<td>UI_V29 based on UI_V28</td>
+</tr>
+<tr>
+<td><code>dashboard.js</code> Console</td>
+<td>UI_V27</td>
+</tr>
+<tr>
+<td>CSS / JS Query String</td>
+<td>V28</td>
+</tr>
+<tr>
+<td>Dashboard Response Schema</td>
+<td>UI_V16 Database Integrated</td>
+</tr>
+<tr>
+<td>Source Code Comments</td>
+<td>V18–V29</td>
+</tr>
+</tbody>
+</table>
+<p>這些名稱是多次 Patch 累積留下的歷史標示，不代表 Runtime 同時運行多套 Engineer UI。正式說明應以目前 Active File 為準，版本總稱使用：</p>
+<pre><code class="language-text">UI_V29 Engineer Integrated
+</code></pre>
+<hr />
+<h2 id="23-known-limitations">23. Known Limitations</h2>
+<h3 id="231-time-slider-unit-mismatch">23.1 Time Slider Unit Mismatch</h3>
+<p>UI 顯示小時，但 Integrated Service 目前把 Slider Value 當成分鐘。Time Mode Label 與實際查詢範圍尚未完全對齊。</p>
+<h3 id="232-ui-and-backend-thresholds-are-different">23.2 UI and Backend Thresholds Are Different</h3>
+<p>Engineer UI 使用：</p>
+<pre><code class="language-text">ui/engineer/config/sensor_thresholds.json
+</code></pre>
+<p>Main API Runtime Rule 使用 Ontology／共用 Rule Source。兩者目前有不同 Threshold，例如 Servo Load、Filter Differential Pressure、Air Pressure 與 Spray Width。</p>
+<p>因此 UI 顯示狀態可能與 Main API 回傳的 Component State 不一致。目前 UI 刻意以顯示數值重新判定為主。</p>
+<h3 id="233-trend-is-a-processed-display-curve">23.3 Trend Is a Processed Display Curve</h3>
+<p>Trend 經過 Multi-time Sampling、Moving Average、Shift 與 Neighbor Clamp，不應描述成 Database Raw Curve。</p>
+<h3 id="234-troubleshooting-uses-local-fallback">23.4 Troubleshooting Uses Local Fallback</h3>
+<p>目前 UI Adapter 沒有把完整 Troubleshooting Payload 傳到 Component Detail，因此畫面通常使用本機 Mapping 與 Diagnosis Catalog。</p>
+<h3 id="235-spray-width-target-range-mismatch">23.5 Spray Width Target Range Mismatch</h3>
+<p>Spray Image Fallback 顯示 <code>105–125 mm</code>，UI Threshold 使用 <code>75–125 mm</code>。</p>
+<h3 id="236-data-quality-is-not-exposed">23.6 Data Quality Is Not Exposed</h3>
+<p>UI 未顯示或篩選 <code>data_quality_flag</code>，使用者無法從畫面辨認該點是 <code>normal</code> 或 <code>interpolated</code>。</p>
+<h3 id="237-request-volume">23.7 Request Volume</h3>
+<p>每 15 秒的 Dashboard Refresh 會呼叫大量 Station／Component API；Trend 又進行多時間點查詢。</p>
+<h3 id="238-integration-status-text-difference">23.8 Integration Status Text Difference</h3>
+<p>畫面 Connection Detail 顯示「Component API：點擊零件時呼叫」，但 Dashboard Initial Load 實際已呼叫三站共 18 次 Component Detail。</p>
+<h3 id="239-no-engineer-dashboard-specific-automated-tests">23.9 No Engineer Dashboard-specific Automated Tests</h3>
+<p>目前 Repository 的 <code>test_engineer_task_*</code> 測試 Engineer Task API，不是 Engineer Dashboard。尚未看到針對 Dashboard Payload、Threshold、Slider、Trend 與 Frontend Interaction 的專用自動測試。</p>
+<h3 id="2310-runtime-visual-verification">23.10 Runtime Visual Verification</h3>
+<p>本文件已依 Active Source Code、Docker Compose 與 API Call Chain 交叉確認。但本次整理環境沒有可使用的 <code>docker</code> 指令，因此尚未完成 Container 實際啟動後的 End-to-end Visual Verification。</p>
+<hr />
+<h2 id="24-implementation-references">24. Implementation References</h2>
+<p>本頁主要依據下列實際檔案：</p>
+<pre><code class="language-text">final_version_0715/ui/engineer/main.py
+final_version_0715/ui/engineer/VERSION.txt
+final_version_0715/ui/engineer/app/dependencies.py
+final_version_0715/ui/engineer/app/routers/dashboard.py
+final_version_0715/ui/engineer/app/routers/detail.py
+final_version_0715/ui/engineer/app/routers/trend.py
+final_version_0715/ui/engineer/app/services/dashboard_service.py
+final_version_0715/ui/engineer/app/services/webservices_client.py
+final_version_0715/ui/engineer/app/services/rules_service.py
+final_version_0715/ui/engineer/app/services/diagnosis_service.py
+final_version_0715/ui/engineer/app/services/api_data_service.py
+final_version_0715/ui/engineer/app/services/local_data_service.py
+final_version_0715/ui/engineer/app/templates/dashboard.html
+final_version_0715/ui/engineer/app/static/dashboard.js
+final_version_0715/ui/engineer/app/static/trend_chart.js
+final_version_0715/ui/engineer/app/static/dashboard.css
+final_version_0715/ui/engineer/config/sensor_thresholds.json
+final_version_0715/ui/engineer/config/sensor_event_mapping.json
+final_version_0715/api/api_server.py
+final_version_0715/api/shaoyu_ui_bridge.py
+final_version_0715/api/database_status.py
+final_version_0715/services/integrated_service/sprayline_integrated_service.py
+final_version_0715/services/event_rule_service/runtime_rule_classifier.py
+final_version_0715/services/integration_adapter/database_versionb_adapter.py
+final_version_0715/docker-compose.yml
+final_version_0715/start.ps1
+final_version_0715/INTEGRATION_0715.md
+final_version_0715/README_0620ver_1_hotfix.md
+</code></pre>
+<hr />
+<h2 id="25-short-system-summary">25. Short System Summary</h2>
+<pre><code class="language-text">PostgreSQL sensor_1min / sensor_3min / batch_run
+                    ↓
+       IntegratedSprayLineService
+       ├── Past / Current DB Query
+       ├── Batch Resolution
+       ├── Derived Metrics
+       └── Deterministic Future Prediction
+                    ↓
+             Main API :8011
+       ├── UI Summary
+       ├── Station Detail
+       └── Component Detail
+                    ↓
+          Engineer UI Server :8013
+       ├── Local Threshold Classification
+       ├── Station / Summary Aggregation
+       ├── Diagnosis Fallback
+       ├── Multi-time Trend Sampling
+       └── Display Timestamp Mapping
+                    ↓
+                Browser
+       ├── 3 Stations
+       ├── 6 Components per Station
+       ├── Fault / Recommendation
+       ├── Process / Spray Image
+       ├── Trend Chart
+       └── Time / Batch Viewer
+</code></pre>
+<p>這是目前 <code>final_version_0715</code> Engineer UI 的主要架構與實際資料流。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.instant.progress"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
