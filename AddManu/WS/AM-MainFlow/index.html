@@ -1,0 +1,2529 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="This is a user guides and services developed by MISLab at NKUST">
+      
+      
+        <meta name="author" content="hao@nkust.edu.tw">
+      
+      
+      
+        <link rel="prev" href="../../UI/06_Quality_Inspection/">
+      
+      
+        <link rel="next" href="../AM-InitialCondition/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>0. Main Flow - Projects Development by MISLab at NKUST</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#main-flow-of-simulation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Projects Development by MISLab at NKUST" class="md-header__button md-logo" aria-label="Projects Development by MISLab at NKUST" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Projects Development by MISLab at NKUST
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              0. Main Flow
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Projects Development by MISLab at NKUST" class="md-nav__button md-logo" aria-label="Projects Development by MISLab at NKUST" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Projects Development by MISLab at NKUST
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A. Additive Manufacturing
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    A. Additive Manufacturing
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../AM-Introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    a. User Interface
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    a. User Interface
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UI/01_Track_Simulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Track Simulation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UI/02_Layer_Simulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Layer Simulation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UI/03_Parameter_Optimization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Parameter Optimization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UI/04_Layer_Synthesis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Layer Synthesis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UI/05_Part_Manufacturing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Part Manufacturing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UI/06_Quality_Inspection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Quality Inspection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    b. Web Service
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    b. Web Service
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0. Main Flow
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0. Main Flow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#main-flow-of-simulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Main Flow of Simulation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. 26 階段固定時間步長主迴圈
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simulation_enginepy-26-v33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        simulation_engine.py — 26 階段固定時間步長主迴圈 v3.3
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="simulation_engine.py — 26 階段固定時間步長主迴圈 v3.3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        功能
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#input" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Input
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Output
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        執行邏輯
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        物理與限制
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-npz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. NPZ 結果輸出與緊急診斷
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#results_iopynpz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        results_io.py｜NPZ 結果輸出與緊急診斷
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="results_io.py｜NPZ 結果輸出與緊急診斷">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-responsibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 程式說明 / Responsibility
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Input（輸入）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Input（輸入）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#saveout-step-t-t-fl-f-alphal-phase-ever-u-v-w" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        save(out, step, t, T, fL, F, alphaL, phase, ever, u, v, w)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#save_emergencyout-step-t-t-fl-f-alphal-phase-ever-u-v-w" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        save_emergency(out, step, t, T, fL, F, alphaL, phase, ever, u, v, w)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finish" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        finish()
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Output（輸出）與副作用
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-gpucpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 程式依賴與 GPU/CPU 邊界
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 物理公式／數值實作對照
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-ai-ai-editing-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. AI 修改約束 / AI Editing Rules
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 程式位置及檢查
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-npz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. NPZ 契約（重要）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AM-InitialCondition/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Initial Condition
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AM-PowderAllocation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Powder Allocation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AM-LaserScanning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Laser Scanning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AM-HeatingProgress/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Heating Process
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AM-PhaseChange/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Phase Change
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AM-LiquidFlow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Liquid Flow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AM-VaporFlow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Vapor Flow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AM-CoolingProgress/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Cooling Process
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AM-SolidifyingProgress/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. Solidification
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AM-QualityInspection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Quality Inspection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    B. Subtractive Manufacturing
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    B. Subtractive Manufacturing
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    a. Smart Tool Holder
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    a. Smart Tool Holder
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SubManu/STH/03_SmartEdgeQuick/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Current Version
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SubManu/STH/01_PartList/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Part List
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SubManu/STH/02_STHBrief/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SubManu/STH/03_SmartEdgeQuick/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Current Version
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SubManu/STH/03_VTRQuick/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. VTR Quick Usage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SubManu/STH/04_VTRDetails/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. VTR Detailed Usage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SubManu/STH/05_STHAdvanced/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. STH Advanced Settings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SubManu/STH/06_VTRAdvanced/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. VTR Advanced Usage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SubManu/STH/07_STHFAQ/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. STH FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SubManu/Edge/SmartEdge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    b. Smart Edge
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SubManu/MA/MachiningAssistant/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    c. Machining Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C. Spray Line
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C. Spray Line
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SprayLine/SL-Issues/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Issue Tracking
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SprayLine/SL-Engineer-UI_1014_v1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    a1. Engineer User Interface
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SprayLine/SL-Manager-UI_1015_v1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    a2. Manager User Interface
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SprayLine/SL-WS_1014_v1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    b. Web Service
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SprayLine/SL-DB_1014_v1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    c. Database
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SprayLine/SL-KM_1015_v1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    d. Knowledge Management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contact
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#main-flow-of-simulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Main Flow of Simulation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-26" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A. 26 階段固定時間步長主迴圈
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#simulation_enginepy-26-v33" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        simulation_engine.py — 26 階段固定時間步長主迴圈 v3.3
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="simulation_engine.py — 26 階段固定時間步長主迴圈 v3.3">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        功能
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#input" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Input
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Output
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        執行邏輯
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        物理與限制
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-npz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B. NPZ 結果輸出與緊急診斷
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#results_iopynpz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        results_io.py｜NPZ 結果輸出與緊急診斷
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="results_io.py｜NPZ 結果輸出與緊急診斷">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-responsibility" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 程式說明 / Responsibility
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-input" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Input（輸入）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Input（輸入）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#saveout-step-t-t-fl-f-alphal-phase-ever-u-v-w" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        save(out, step, t, T, fL, F, alphaL, phase, ever, u, v, w)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#save_emergencyout-step-t-t-fl-f-alphal-phase-ever-u-v-w" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        save_emergency(out, step, t, T, fL, F, alphaL, phase, ever, u, v, w)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finish" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        finish()
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Output（輸出）與副作用
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-gpucpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 程式依賴與 GPU/CPU 邊界
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 物理公式／數值實作對照
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-ai-ai-editing-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. AI 修改約束 / AI Editing Rules
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 程式位置及檢查
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-npz" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. NPZ 契約（重要）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h3 id="main-flow-of-simulation">Main Flow of Simulation</h3>
+<ul>
+<li>A. 26 階段固定時間步長主迴圈</li>
+<li>B. NPZ 結果輸出與緊急診斷</li>
+</ul>
+<hr style="border: none; height: 3px; background-color: #333; margin: 20px 0;">
+
+<h2 id="a-26">A.  26 階段固定時間步長主迴圈</h2>
+<h1 id="simulation_enginepy-26-v33">simulation_engine.py — 26 階段固定時間步長主迴圈 v3.3</h1>
+<h2 id="_1">功能</h2>
+<p>保留 Voxel (2 µm) 三維熱場、液態流、VOF、凝固冷卻及 NPZ 輸出；從執行開始計時直到結束。</p>
+<h2 id="input">Input</h2>
+<ul>
+<li><code>run(start_wall=None)</code>：可傳入 <code>time.perf_counter()</code> 起始值；不傳則內部取得。</li>
+<li><code>process_parameters.FIXED_DT_NS</code>：固定步長，預設 0.4 ns。</li>
+<li><code>process_parameters.FIXED_DT_CHECK_EVERY</code>：每幾步檢查穩定性，預設 100。</li>
+<li><code>solid_mask.npy</code>：金屬初始 voxel mask，shape <code>(Nx,Ny,Nz)</code>。</li>
+</ul>
+<h2 id="output">Output</h2>
+<ul>
+<li>回傳輸出資料夾 <code>Path</code>。</li>
+<li>NPZ 包含 <code>T</code>、<code>fL</code>、<code>F</code>、<code>phase</code>、<code>ever_melted</code>、<code>u,v,w</code> 等欄位。</li>
+<li>CLI 顯示 <code>dt_limiter=fixed</code>、累積步數、計算時間、冷卻檢查等。</li>
+</ul>
+<h2 id="_2">執行邏輯</h2>
+<p>每步 <code>dt = FIXED_DT</code>，不呼叫 <code>choose()</code>，不依 <code>force_accel</code> 減小 dt；雷射停止後也是同一步長。固定步長若違反上一時刻估計的穩定條件，僅透過 <code>validate_fixed_dt</code> 中止，不自動縮步長。雷射終止時間可落在兩個固定時間節點中間。</p>
+<h2 id="_3">物理與限制</h2>
+<p><code>F</code> 是 VOF 金屬體積分率；<code>fL</code> 是液相率。維持無總步數上限，冷卻至達成凝固門檻才正常結束。本版仍是研究原型，尚未驗證守恆焓平流與高精度 PLIC。</p>
+<hr style="border: none; height: 3px; background-color: #333; margin: 20px 0;">
+
+<h2 id="b-npz">B. NPZ 結果輸出與緊急診斷</h2>
+<h1 id="results_iopynpz">results_io.py｜NPZ 結果輸出與緊急診斷</h1>
+<blockquote>
+<p>對應版本：LPBF 26-Step GPU v2.9。<strong>以實際 Python 原始碼為準</strong>；本文件不代表已通過 GPU 實測或數值驗證。</p>
+</blockquote>
+<h2 id="1-responsibility">1. 程式說明 / Responsibility</h2>
+<p>將 GPU 狀態複製至 CPU，背景寫一般 NPZ；流速暴衝時同步、原子式儲存 emergency。</p>
+<p><strong>計算流程：</strong> state_t<em>.npz 或 emergency_step</em>.npz、回傳 Path。</p>
+<h2 id="2-input">2. Input（輸入）</h2>
+<p>以下為原始碼函數簽章，名稱與參數順序直接對照 Python：</p>
+<h3 id="saveout-step-t-t-fl-f-alphal-phase-ever-u-v-w"><code>save(out, step, t, T, fL, F, alphaL, phase, ever, u, v, w)</code></h3>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>含義／單位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>out</code></td>
+<td>輸出資料夾 Path</td>
+</tr>
+<tr>
+<td><code>step</code></td>
+<td>整數 timestep 計數</td>
+</tr>
+<tr>
+<td><code>t</code></td>
+<td>模擬物理時間 s</td>
+</tr>
+<tr>
+<td><code>T</code></td>
+<td>溫度 K，GPU 3D float32</td>
+</tr>
+<tr>
+<td><code>fL</code></td>
+<td>液相率 [0,1]，GPU 3D float32</td>
+</tr>
+<tr>
+<td><code>F</code></td>
+<td>金屬體積分率 VOF [0,1]，GPU 3D float32</td>
+</tr>
+<tr>
+<td><code>alphaL</code></td>
+<td>液態金屬體積分率 = F*fL</td>
+</tr>
+<tr>
+<td><code>phase</code></td>
+<td>相態 uint8 GPU 3D</td>
+</tr>
+<tr>
+<td><code>ever</code></td>
+<td>曾經熔化的 GPU bool 3D mask</td>
+</tr>
+<tr>
+<td><code>u</code></td>
+<td>X 正向面速度 m/s，GPU 3D float32</td>
+</tr>
+<tr>
+<td><code>v</code></td>
+<td>Y 正向面速度 m/s，GPU 3D float32</td>
+</tr>
+<tr>
+<td><code>w</code></td>
+<td>Z 正向面速度 m/s，GPU 3D float32</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Output（回傳）</strong>：Path: 常規 NPZ 目標路徑（異步）</p>
+<p>原始回傳表達式：
+- <code>return path</code></p>
+<h3 id="save_emergencyout-step-t-t-fl-f-alphal-phase-ever-u-v-w"><code>save_emergency(out, step, t, T, fL, F, alphaL, phase, ever, u, v, w)</code></h3>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>含義／單位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>out</code></td>
+<td>輸出資料夾 Path</td>
+</tr>
+<tr>
+<td><code>step</code></td>
+<td>整數 timestep 計數</td>
+</tr>
+<tr>
+<td><code>t</code></td>
+<td>模擬物理時間 s</td>
+</tr>
+<tr>
+<td><code>T</code></td>
+<td>溫度 K，GPU 3D float32</td>
+</tr>
+<tr>
+<td><code>fL</code></td>
+<td>液相率 [0,1]，GPU 3D float32</td>
+</tr>
+<tr>
+<td><code>F</code></td>
+<td>金屬體積分率 VOF [0,1]，GPU 3D float32</td>
+</tr>
+<tr>
+<td><code>alphaL</code></td>
+<td>液態金屬體積分率 = F*fL</td>
+</tr>
+<tr>
+<td><code>phase</code></td>
+<td>相態 uint8 GPU 3D</td>
+</tr>
+<tr>
+<td><code>ever</code></td>
+<td>曾經熔化的 GPU bool 3D mask</td>
+</tr>
+<tr>
+<td><code>u</code></td>
+<td>X 正向面速度 m/s，GPU 3D float32</td>
+</tr>
+<tr>
+<td><code>v</code></td>
+<td>Y 正向面速度 m/s，GPU 3D float32</td>
+</tr>
+<tr>
+<td><code>w</code></td>
+<td>Z 正向面速度 m/s，GPU 3D float32</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Output（回傳）</strong>：Path: 已同步落盤的 emergency NPZ</p>
+<p>原始回傳表達式：
+- <code>return path</code></p>
+<h3 id="finish"><code>finish()</code></h3>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>含義／單位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>無顯式輸入</td>
+<td>可能讀取全域設定或模組資料</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Output（回傳）</strong>：None: 等候所有背景檔案寫入完成</p>
+<h2 id="3-output">3. Output（輸出）與副作用</h2>
+<ul>
+<li><strong>直接輸出：</strong> 上述函數回傳資料。</li>
+<li><strong>檔案寫入：</strong> 此模組負責 NPZ 存檔。</li>
+</ul>
+<h2 id="4-gpucpu">4. 程式依賴與 GPU/CPU 邊界</h2>
+<ul>
+<li>專案內相依模組：<code>process_parameters.py</code>。</li>
+<li>主要 GPU 場使用 CuPy；<code>float(...)</code>、<code>.get()</code>、<code>cp.asnumpy()</code> 可能產生同步。不要在每個 voxel 的 Python 迴圈中逐一搬運。</li>
+<li><code>material_parameters.py</code> 與 <code>process_parameters.py</code> 在 CPU 設定材料與製程常數；GPU 計算模組讀取這些常數。</li>
+</ul>
+<h2 id="5">5. 物理公式／數值實作對照</h2>
+<p>輸出 CPU numpy NPZ 陣列；常規非同步，緊急同步。</p>
+<h2 id="6-ai-ai-editing-rules">6. AI 修改約束 / AI Editing Rules</h2>
+<ol>
+<li>save() 返回不代表背景寫檔完成；finish() 等待任務結束。</li>
+<li>修改函數名稱、輸入或回傳時，需同步搜尋所有呼叫者並更新此 MD。</li>
+<li>維持 <code>F</code>（金屬 VOF）、<code>fL</code>（液相率）、<code>alphaL=F*fL</code> 三者的不同含義。</li>
+<li>GPU 欄位優先使用 CuPy float32；不可為了加速而省略必要的 CFL、散度與守恆檢查。</li>
+<li>若程式本身未實作特定物理功能，不得在 AI 說明中宣稱已實作。</li>
+</ol>
+<h2 id="7">7. 程式位置及檢查</h2>
+<ul>
+<li>原始碼：<code>../results_io.py</code></li>
+<li>此文件是 v2.9 程式的閱讀指南。若程式更新版本，應重新檢查 Input/Output。</li>
+</ul>
+<h2 id="8-npz">8. NPZ 契約（重要）</h2>
+<table>
+<thead>
+<tr>
+<th>正常存檔欄位</th>
+<th>意義</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>T</code></td>
+<td>K，溫度場</td>
+</tr>
+<tr>
+<td><code>fL</code> / <code>liquid_fraction</code></td>
+<td>[0,1] 液相率</td>
+</tr>
+<tr>
+<td><code>F</code> / <code>vof_fraction</code> / <code>metal_fraction</code></td>
+<td>[0,1] 金屬 VOF</td>
+</tr>
+<tr>
+<td><code>liquid_metal_fraction</code></td>
+<td>F×fL</td>
+</tr>
+<tr>
+<td><code>phase</code></td>
+<td>0 氣、1 固、2 半熔、3 液、4 再凝固</td>
+</tr>
+<tr>
+<td><code>ever_melted</code></td>
+<td>曾熔化旗標</td>
+</tr>
+<tr>
+<td><code>u</code>,<code>v</code>,<code>w</code></td>
+<td><code>SAVE_VELOCITY=1</code> 時輸出</td>
+</tr>
+<tr>
+<td><code>vof_interface_mask</code></td>
+<td><code>SAVE_VOF_SURFACE=1</code> 時輸出</td>
+</tr>
+<tr>
+<td><code>time_s</code>, <code>time_us</code></td>
+<td>物理時間</td>
+</tr>
+<tr>
+<td><code>dx</code>,<code>dy</code>,<code>dz</code></td>
+<td>m</td>
+</tr>
+</tbody>
+</table>
+<p>緊急檔 <code>emergency_step*.npz</code> 額外包含 <code>alphaL</code>,<code>step</code> 及 <code>diagnostic_*</code>；以 <code>save_emergency()</code> 程式實作為準。</p>
+<hr style="border: none; height: 3px; background-color: #333; margin: 20px 0;">
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.instant.progress"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
