@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1400" viewBox="0 0 1200 1400" role="img" aria-labelledby="title desc">
+  <title id="title">圖 6｜工程師監控與查詢操作流程</title>
+  <desc id="desc">開啟介面後確認連線。異常時重新檢查；正常時閱讀站點，依需求查看零件、全站異常或參數。比較時間與批次後回到即時監控。</desc>
+  <style>
+    text { font-family: "Microsoft JhengHei", "Noto Sans TC", sans-serif; fill: #263238; }
+    .title { font-size: 28px; font-weight: 700; }
+    .heading { font-size: 22px; font-weight: 700; }
+    .body { font-size: 18px; }
+    .caption { font-size: 17px; fill: #536773; }
+    .node { fill: #fff; stroke: #c6d2da; stroke-width: 1.5; }
+    .connector { fill: none; stroke: #607888; stroke-width: 2; stroke-linejoin: round; }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M 1 1 L 9 5 L 1 9 Z" fill="#607888"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="1400" fill="#f4f7fa"/>
+  <text x="40" y="48" class="title">圖 6｜工程師監控與查詢操作流程</text>
+  <text x="40" y="76" class="caption">由上往下閱讀；查看內容可依需求選擇。</text>
+
+  <!-- Main entry -->
+  <rect x="350" y="100" width="500" height="90" rx="12" class="node"/>
+  <text x="600" y="136" text-anchor="middle" class="heading">開啟 Engineer UI</text>
+  <text x="600" y="166" text-anchor="middle" class="body">http://localhost:8013</text>
+  <path d="M600 190 V230" class="connector" marker-end="url(#arrow)"/>
+
+  <!-- Connection decision; separate outgoing and returning routes -->
+  <path d="M600 230 L750 305 L600 380 L450 305 Z" fill="#e8f1f7" stroke="#bdceda" stroke-width="1.5"/>
+  <text x="600" y="299" text-anchor="middle" class="heading">連線與資料</text>
+  <text x="600" y="329" text-anchor="middle" class="body">是否正常？</text>
+  <path d="M450 305 H340" class="connector" marker-end="url(#arrow)"/>
+  <text x="394" y="288" text-anchor="middle" class="caption">異常</text>
+  <rect x="40" y="252" width="300" height="110" rx="12" fill="#fff3e8" stroke="#decdbf" stroke-width="1.5"/>
+  <text x="190" y="286" text-anchor="middle" class="heading">確認服務與錯誤訊息</text>
+  <text x="190" y="317" text-anchor="middle" class="body">按「重新檢查」</text>
+  <text x="190" y="343" text-anchor="middle" class="caption">確認後再重新載入畫面</text>
+  <path d="M190 252 V145 H350" class="connector" marker-end="url(#arrow)"/>
+  <text x="208" y="213" class="caption">重新確認</text>
+  <path d="M600 380 V420" class="connector" marker-end="url(#arrow)"/>
+  <text x="620" y="405" class="caption">正常</text>
+
+  <rect x="350" y="420" width="500" height="90" rx="12" class="node"/>
+  <text x="600" y="456" text-anchor="middle" class="heading">閱讀摘要與三站卡片</text>
+  <text x="600" y="486" text-anchor="middle" class="body">確認正常、注意或異常的站點</text>
+  <path d="M600 510 V550" class="connector" marker-end="url(#arrow)"/>
+
+  <rect x="350" y="550" width="500" height="90" rx="12" class="node"/>
+  <text x="600" y="586" text-anchor="middle" class="heading">選擇站點與查看內容</text>
+  <text x="600" y="616" text-anchor="middle" class="body">依檢查需求使用下列功能</text>
+
+  <!-- Shared branch line has no arrowheads; arrows terminate only at boxes -->
+  <path d="M600 640 V680 M210 680 H990" class="connector"/>
+  <path d="M210 680 V720" class="connector" marker-end="url(#arrow)"/>
+  <path d="M600 680 V720" class="connector" marker-end="url(#arrow)"/>
+  <path d="M990 680 V720" class="connector" marker-end="url(#arrow)"/>
+
+  <rect x="40" y="720" width="340" height="120" rx="12" fill="#eef2fc" stroke="#c6d2da" stroke-width="1.5"/>
+  <text x="210" y="755" text-anchor="middle" class="heading">點選零件卡片</text>
+  <text x="210" y="788" text-anchor="middle" class="body">閱讀數值、原因與處理建議</text>
+  <text x="210" y="817" text-anchor="middle" class="body">自動展開對應零件趨勢圖</text>
+
+  <rect x="430" y="720" width="340" height="120" rx="12" fill="#eef2fc" stroke="#c6d2da" stroke-width="1.5"/>
+  <text x="600" y="755" text-anchor="middle" class="heading">查看全站異常說明</text>
+  <text x="600" y="788" text-anchor="middle" class="body">彙整該站注意與異常零件</text>
+  <text x="600" y="817" text-anchor="middle" class="body">無異常時顯示正常說明</text>
+
+  <rect x="820" y="720" width="340" height="120" rx="12" fill="#eef2fc" stroke="#c6d2da" stroke-width="1.5"/>
+  <text x="990" y="755" text-anchor="middle" class="heading">查看製程參數與噴幅</text>
+  <text x="990" y="788" text-anchor="middle" class="body">展開參數或噴幅示意面板</text>
+  <text x="990" y="817" text-anchor="middle" class="body">再次點擊同一按鈕可收合</text>
+
+  <!-- One clean merge followed by a single arrow -->
+  <path d="M210 840 V880 H990 V840 M600 840 V900" class="connector"/>
+  <path d="M600 900 V920" class="connector" marker-end="url(#arrow)"/>
+
+  <rect x="350" y="920" width="500" height="120" rx="12" class="node"/>
+  <text x="600" y="956" text-anchor="middle" class="heading">比較其他時間／批次（依需要）</text>
+  <text x="600" y="990" text-anchor="middle" class="body">切換時間／批次模式，移動滑桿</text>
+  <text x="600" y="1020" text-anchor="middle" class="body">查看更新後的卡片、診斷與趨勢</text>
+  <path d="M600 1040 V1090" class="connector" marker-end="url(#arrow)"/>
+
+  <rect x="350" y="1090" width="500" height="110" rx="12" fill="#e8f4eb" stroke="#bfd4c4" stroke-width="1.5"/>
+  <text x="600" y="1126" text-anchor="middle" class="heading">按「回到即時 BackToLive」</text>
+  <text x="600" y="1160" text-anchor="middle" class="body">滑桿回到 0，恢復每 15 秒更新</text>
+  <text x="600" y="1185" text-anchor="middle" class="caption">完成歷史／未來查詢後回到目前狀態</text>
+  <path d="M600 1200 V1250" class="connector" marker-end="url(#arrow)"/>
+
+  <rect x="350" y="1250" width="500" height="80" rx="40" class="node"/>
+  <text x="600" y="1298" text-anchor="middle" class="heading">持續監控產線狀態</text>
+  <text x="600" y="1370" text-anchor="middle" class="caption">現場檢查與維護由工程師依設備規範執行。</text>
+</svg>
