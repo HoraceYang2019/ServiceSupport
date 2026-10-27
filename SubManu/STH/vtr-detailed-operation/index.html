@@ -1,0 +1,2816 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="This is a user guides and services developed by MISLab at NKUST">
+      
+      
+        <meta name="author" content="hao@nkust.edu.tw">
+      
+      
+      
+        <link rel="prev" href="../vtr-quick-start/">
+      
+      
+        <link rel="next" href="../sth-advanced-settings/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>5. VTR Detailed Usage - Projects Developed by MISLab at NKUST</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#5-" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Projects Developed by MISLab at NKUST" class="md-header__button md-logo" aria-label="Projects Developed by MISLab at NKUST" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Projects Developed by MISLab at NKUST
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              5. VTR Detailed Usage
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Projects Developed by MISLab at NKUST" class="md-nav__button md-logo" aria-label="Projects Developed by MISLab at NKUST" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Projects Developed by MISLab at NKUST
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    A. Additive Manufacturing
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    A. Additive Manufacturing
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../AddManu/AM-Introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    a. User Interface
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    a. User Interface
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../AddManu/UI/01_Track_Simulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Track Simulation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../AddManu/UI/02_Layer_Simulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Layer Simulation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../AddManu/UI/03_Parameter_Optimization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Parameter Optimization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../AddManu/UI/04_Layer_Synthesis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Layer Synthesis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../AddManu/UI/05_Part_Manufacturing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Part Manufacturing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../AddManu/UI/06_Quality_Inspection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Quality Inspection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    b. Web Service
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    b. Web Service
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../AddManu/WS/AM-MainFlow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0. Main Flow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../AddManu/WS/AM-InitialCondition/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Initial Condition
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../AddManu/WS/AM-PowderAllocation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Powder Allocation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../AddManu/WS/AM-LaserScanning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Laser Scanning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../AddManu/WS/AM-HeatingState/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Heating State
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../AddManu/WS/AM-PhaseChange/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Phase Change
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../AddManu/WS/AM-VaporFlow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Vapor Flow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../AddManu/WS/AM-LiquidFlow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Liquid Flow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../AddManu/WS/AM-CoolingState/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Cooling State
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../AddManu/WS/AM-SolidifyingState/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. Solidifying State
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../AddManu/WS/AM-QualityInspection/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Quality Inspection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../AddManu/WS/AM-ParameterOptimization.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. Parameter Optimization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    B. Subtractive Manufacturing
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    B. Subtractive Manufacturing
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../SM-Introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    a. Smart Tool Holder
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    a. Smart Tool Holder
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Current Version
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../parts-list/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Part List
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../smart-tool-holder-introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../edge-detailed-operation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. SmartEdge Quick Usage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vtr-quick-start/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. VTR Quick Usage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. VTR Detailed Usage
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. VTR Detailed Usage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        初次操作
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        計畫設定
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        連線檢查
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        儲存設定
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        即時監控
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        自動測試
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        歷程檢視
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        模擬分析
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sth-advanced-settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. STH Advanced Settings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vtr-advanced-usage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. VTR Advanced Usage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. STH FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../performance-analysis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. Performance Analysis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    b. Smart Edge
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    b. Smart Edge
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Edge/Edge-ForceSimulation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0. Force Simulation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Edge/Edge-BeforeMachining/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Before Machining
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Edge/Edge-AfterMachining/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. After Machining
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Edge/Edge-Report/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Report
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    c. Machining Assistant
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    c. Machining Assistant
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MA/MA-Setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MA/MA-Monitor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Monitor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MA/MA-Analysis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Analysis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MA/MA-Review/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Review
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../MA/MA-QA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. QA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C. Spray Line
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C. Spray Line
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SprayLine/SL-Issues/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Issue Tracking
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SprayLine/SL-Engineer-UI_1014_v1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    a1. Engineer User Interface
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SprayLine/SL-Manager-UI_1015_v1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    a2. Manager User Interface
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SprayLine/SL-WS_1014_v1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    b. Web Service
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SprayLine/SL-DB_1014_v1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    c. Database
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../SprayLine/SL-KM_1015_v1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    d. Knowledge Management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contact/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contact
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        初次操作
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        計畫設定
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        連線檢查
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        儲存設定
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        即時監控
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        自動測試
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        歷程檢視
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        模擬分析
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="5-">5 虛擬刀房- 詳細操作說明</h1>
+<ul>
+<li>虛擬刀房軟體詳細說明包含初次操作、計畫設定、連線檢查、儲存設定、即時監控、自動測試、歷程檢視、與模擬分析等，分述如下。</li>
+</ul>
+<h2 id="_1">初次操作</h2>
+<p>安裝Python並確認環境變數:</p>
+<p>安裝完Python後，檢查Python環境變數(如圖 59)路徑下是否有python.exe(如圖 60)，確保系統正常運行</p>
+<p><img alt="原始手冊圖片 1" src="images/fig-001.jpg" /></p>
+<p>圖 59、Python環境變數</p>
+<p><img alt="原始手冊圖片 2" src="images/fig-002.png" /></p>
+<p>圖 60、環境變數路徑下的python.exe</p>
+<p>MQTT前置設定:</p>
+<p>安裝mosquitto作為MQTT的broker，安裝網址mosquitto.org(如圖 61)。</p>
+<p>使用 MQTT 前，需要先在 Windows Defender 防火牆中新增輸入規則，允許 Port 1883 通訊，以便電腦啟用 MQTT 服務（如圖 15）。</p>
+<p>(1) 到mosquitto網站上選取所需的版本下載</p>
+<p><img alt="原始手冊圖片 3" src="images/fig-003.png" /></p>
+<p><em>圖 61、MQTT前置設定1</em></p>
+<p><img alt="原始手冊圖片 4" src="images/fig-004.png" /></p>
+<p><em>圖 62、MQTT前置設定2</em></p>
+<p>(2) 搜尋「控制台」開啟控制台介面，開啟「系統及安全性」(如圖 63)</p>
+<p><img alt="原始手冊圖片 5" src="images/fig-005.png" /></p>
+<p><em>圖 63、MQTT前置設定3</em></p>
+<p>(3) 開啟「Windows Defender防火牆」(如圖 64)</p>
+<p><img alt="原始手冊圖片 6" src="images/fig-006.png" /></p>
+<p>圖 64、MQTT前置設定4</p>
+<p>(4) 選擇「進階設定」(如圖 65)</p>
+<p><img alt="原始手冊圖片 7" src="images/fig-007.png" /></p>
+<p>圖 65、MQTT前置設定5</p>
+<p>(5) 選擇「輸入規則」後按下「新增規則」(如圖 66)</p>
+<p><img alt="原始手冊圖片 8" src="images/fig-008.png" /></p>
+<p>圖 66、MQTT前置設定6</p>
+<p>(6)選擇連接埠(如圖 67)</p>
+<p><img alt="原始手冊圖片 9" src="images/fig-009.png" /></p>
+<p>圖 67、MQTT前置設定7</p>
+<p>(7) MQTT 的預設通訊埠為 1883，選擇TCP連線協定以及在特定本機連接埠輸入1883(如圖 68)</p>
+<p><img alt="原始手冊圖片 10" src="images/fig-010.png" /></p>
+<p>圖 68、MQTT前置設定8</p>
+<p>(8) 選擇允許連線(如圖 69)</p>
+<p><img alt="原始手冊圖片 11" src="images/fig-011.png" /></p>
+<p>圖 69、MQTT前置設定9</p>
+<p>(9) 選擇網域、私人、公用(如圖 70)</p>
+<p><img alt="原始手冊圖片 12" src="images/fig-012.png" /></p>
+<p>圖 70、MQTT前置設定10</p>
+<p>(10) 填好名稱後，完成輸出Port 1883的規則(如圖 71)</p>
+<p><img alt="原始手冊圖片 13" src="images/fig-013.jpg" /></p>
+<p>圖 71、MQTT前置設定11</p>
+<p>(11) 確認輸入規則正常啟用(如圖 72)。</p>
+<p><img alt="原始手冊圖片 14" src="images/fig-014.png" /></p>
+<p>圖 72、MQTT前置設定12</p>
+<p>設定IP與Router位置:</p>
+<p>在開始實驗之前，首先要連接WIFI，選擇ST_route，編輯網路IP設定(如圖 73)</p>
+<p><img alt="原始手冊圖片 15" src="images/fig-015.png" /></p>
+<p>圖 73、網路IP設定</p>
+<h2 id="_2">計畫設定</h2>
+<p><img alt="原始手冊圖片 16" src="images/fig-016.png" /></p>
+<p>圖 74、計畫設定頁面</p>
+<p>計畫設定頁面操作流程</p>
+<ol>
+<li>創建與更新計畫(如圖 75)</li>
+</ol>
+<p><img alt="原始手冊圖片 17" src="images/fig-017.png" /></p>
+<p>圖 75、生產計畫設定頁面之創建與更新計畫畫面</p>
+<p>新建計畫(NEW PLAN)：</p>
+<p>如果需要開始新的生產或實驗計畫，請按下「NEW PLAN」。這會創建新的計畫檔案，可以在其中設定所有必要的機台、刀具和工件參數。</p>
+<p>新的計畫會以JSON與YML格式保存，並包含計畫的所有基礎設定，例如日期、機台位置和計畫類型等。</p>
+<p>更新計畫(UPDATE PLAN)：</p>
+<p>當需要對現有的計畫進行修改時，使用「UPDATE PLAN」按鈕。例如更改機台的配置或刀具的參數，可以通過這個按鈕進行更新。</p>
+<p>更新後的計畫會覆蓋現有版本，並且所有變更會顯示在「Plan Updates」區域中，方便追蹤變更內容。</p>
+<p>重新載入計畫(Reload Plan)：</p>
+<p>如果需要動用過去的資料，可以使用「Reload Plan」重新載入計畫，這樣就能看到該檔案的設定。</p>
+<ol>
+<li>設定機台與刀具和加工模式(如圖 76)</li>
+</ol>
+<p><img alt="原始手冊圖片 18" src="images/fig-018.png" /></p>
+<p>圖 76、生產計畫設定頁面之設定機台與刀具畫面</p>
+<p>機台與工件和加工模式設定：</p>
+<p>在「Machine-Part-Tool Holder」區域中，可以設置機台基本信息，例如機台編號(Machine ID)、型號(Type)、控制器(Controller)、加工模式(Machining)以便於記錄不同的機台和加工模式。</p>
+<p>設計檔案(Design STL)、材料(Material)：上傳工件的STL檔案，並選擇工件材料，這樣可以為生產過程提供參考。</p>
+<p>設定計畫需要綁定的智慧刀把與刀具：</p>
+<p>在STH選擇MAC號和在TID選擇刀具編號，得以進行綁定。</p>
+<p>智慧刀把與刀具綁定：</p>
+<p>綁定(BIND)：使用此按鈕來綁定智慧刀把(如STH1、STH2)的MAC與刀具編號(如TID1、TID2等)，確保正確紀錄和使用對應的刀具。</p>
+<p>清除綁定(CLEAR BIND)：解除刀具和刀把之間的綁定，按下「CLEAR BIND」即可清除當前綁定的信息。</p>
+<ol>
+<li>設定刀具參數(如圖 77)</li>
+</ol>
+<p><img alt="原始手冊圖片 19" src="images/fig-019.png" /></p>
+<p>圖 77、生產計畫設定頁面之設定刀具參數畫面</p>
+<p>刀具設定(T1-T5 區域)：</p>
+<p>在每個刀具區域(T1~T5)中可以設定刀具的參數，包括刀具編號(Tool ID)、直徑(Diameter)、刃數(Flute Num)、全長(Full Height)和刃長(Flute Height)。</p>
+<p>同時記錄每個刀具的磨損狀況，包括加工前磨損(Wear Before Machining)和加工後磨損(Wear After Machining)，用於分析刀具的使用壽命和優化生產。</p>
+<p>這些設定會保存到計畫檔案中，並顯示在「Plan Updates」區域供日後參考。</p>
+<ol>
+<li>查看計畫更新記錄(如圖 78)</li>
+</ol>
+<p><img alt="原始手冊圖片 20" src="images/fig-020.png" /></p>
+<p>圖 78、生產計畫設定頁面之計畫更新記錄畫面</p>
+<p>計畫更新(Plan Updates)：</p>
+<p>這個區域用於顯示在生產計畫中所做的所有更新。每當按下「UPDATE PLAN」或進行其他計畫更改時，這些變更內容都會以JSON格式記錄在此處。</p>
+<h2 id="_3">連線檢查</h2>
+<p><img alt="原始手冊圖片 21" src="images/fig-021.png" /></p>
+<p>圖 79、連線檢查頁面</p>
+<p>連線檢查頁面操作流程</p>
+<ol>
+<li>設定與掃描操作(如圖 80)</li>
+</ol>
+<p><img alt="原始手冊圖片 22" src="images/fig-022.png" /></p>
+<p>圖 80、連線檢查頁面之設定與掃描操作畫面</p>
+<p>RESET DEFAULT(重置為預設):</p>
+<p>按下這個按鈕會將參數重置為系統的預設值，從InitSTH.py讀取初始設置，方便快速恢復到系統默認狀態。</p>
+<p>APPLY UPDATES(應用更新):</p>
+<p>當更改連線設置後，按下此按鈕可以將新的參數值保存至InitSTH_u.json文件，確保更新的配置被記錄下來，並且所有變更會顯示在「Parameter Updates」區域中，方便追蹤和確認變更內容。</p>
+<p>LOAD STHSCAN(載入STH掃描程序):</p>
+<p>這個按鈕用於載入智慧刀把掃描程序(STHScan.exe)，準備開始進行智慧刀把的掃描。</p>
+<p>RE-SCAN(重新掃描):</p>
+<p>按下這個按鈕可以啟動STH的掃描程序，以檢查並確認當前有哪些智慧刀把可用。</p>
+<p>UNLOAD SCAN(卸載掃描):</p>
+<p>當不再需要掃描智慧刀把時，可以按下此按鈕結束並退出STH掃描程序。</p>
+<ol>
+<li>可用智慧刀把與掃描設置(如圖 81)</li>
+</ol>
+<p><img alt="原始手冊圖片 23" src="images/fig-023.png" /></p>
+<p>圖 81、連線檢查頁面之可用智慧刀把與掃描設置畫面</p>
+<p>Available STHs(目前可用智慧刀把):</p>
+<p>在這個區域中會顯示通過掃描得到的智慧刀把MAC地址和對應的Port號，最多可顯示五組。</p>
+<p>STH Scan(掃描智慧刀把):</p>
+<p>WIFI Router Used?(是否使用 WIFI Router)選擇是否通過Wi-Fi路由器進行掃描。</p>
+<p>First Port for Scanning(掃描起始 Port)設定用於掃描智慧刀把的起始連線端口。</p>
+<p>Total STHs(最大智慧刀把數量)設定最大可掃描的智慧刀把數量。</p>
+<p>Max Scan Time(最大掃描時間(秒))設定每次掃描操作的最大時間，這些設置會保存在InitSTH_u.json中。</p>
+<ol>
+<li>連線端口設定(如圖 82)</li>
+</ol>
+<p><img alt="原始手冊圖片 24" src="images/fig-024.png" /></p>
+<p>圖 82、連線檢查頁面之連線端口設定畫面</p>
+<p>Assign/Reset Port Setting(分配/重置端口設置):</p>
+<p>Reset All Ports of STHs(重置所有智慧刀把端口)選擇是否重置所有已掃描到的STH連線端口。</p>
+<p>Auto-Assign New Port(自動分配新端口)選擇是否自動分配新的連線端口給智慧刀把。</p>
+<p>Manual Assign(手動分配)選擇是否手動分配不同的連線端口。</p>
+<ol>
+<li>網路與MQTT設定(如圖 83)</li>
+</ol>
+<p><img alt="原始手冊圖片 25" src="images/fig-025.png" /></p>
+<p>圖 83、連線檢查頁面之網路與MQTT設定畫面</p>
+<p>Networking(TCP/IP 設定):</p>
+<p>STH Router Name(路由器名稱)設定連接智慧刀把的路由器名稱。</p>
+<p>Edge IP Address(機邊 IP 地址)設定機邊電腦的IP位址，便於與智慧刀把進行連接。</p>
+<p>Web Address(Web 位址)和Web Port(Web 通訊埠)設定用於UI與系統之間的網頁通訊。</p>
+<p>Message Broking(MQTT 設定):</p>
+<p>Remote Control?(遠端控制)設定是否允許遠端控制智慧刀把。</p>
+<p>Is a Local Broker?(本機 Broker)選擇是否使用本地的MQTT Broker。</p>
+<p>Message Broker Address(Broker 位址)和Broker Port(通訊埠)設定MQTT消息Broker的地址和通訊端口。</p>
+<p>Topic of Syn/Scan/pdata/log分別設定MQTT的Syn、Scan、pdata和Log主題名稱，確保每個功能模塊的消息順利傳輸。</p>
+<ol>
+<li>更新與掃描記錄(如圖 84)</li>
+</ol>
+<p><img alt="原始手冊圖片 26" src="images/fig-026.png" /></p>
+<p>圖 84、連線檢查頁面之更新與掃描記錄畫面</p>
+<p>Parameter Updates(參數更新):</p>
+<p>按下「APPLY UPDATES」後，這個區域會顯示所有連線檢查和儲存設定的內容，以JSON格式呈現，這樣可以幫助確認所有變更是否正確應用。</p>
+<p>Scan Logs(掃描日誌):</p>
+<p>當按下「LOAD STHSCAN」後，這個區域會顯示STHScan.exe的運行日誌。</p>
+<h2 id="_4">儲存設定</h2>
+<p><img alt="原始手冊圖片 27" src="images/fig-027.png" /></p>
+<p>圖 85、儲存設定頁面</p>
+<p>儲存設定頁面操作流程</p>
+<ol>
+<li>計畫管理與重置(如圖 86)</li>
+</ol>
+<p><img alt="原始手冊圖片 28" src="images/fig-028.png" /></p>
+<p>圖 86、儲存設定頁面之計畫管理與重置畫面</p>
+<p>RESET DEFAULT(重置為預設):</p>
+<p>按下此按鈕會將參數重置為預設值，從InitSTH.py載入初始設置，這樣可以快速恢復到系統的預設狀態。</p>
+<p>APPLY UPDATES(應用更新):</p>
+<p>當確認了啟用STH的狀態後，按下此按鈕可以將這些更新保存到JSON中，供後續使用。</p>
+<ol>
+<li>啟用的智慧刀把(Active STH) (如圖 87)
+<img alt="原始手冊圖片 29" src="images/fig-029.png" /></li>
+</ol>
+<p>圖 87、儲存設定頁面之啟用的智慧刀把畫面</p>
+<p>Active STH:</p>
+<p>STH_version(版本)顯示當前啟用的智慧刀把版本。</p>
+<p>Active STH-MAC顯示目前啟用的智慧刀把的MAC號。</p>
+<p>Tool ID顯示目前與啟用STH綁定的刀具ID。</p>
+<p>Total channels(總頻道數)顯示當前智慧刀把的總輸出頻道數。</p>
+<p>Port顯示智慧刀把的連線端口號。</p>
+<ol>
+<li>文件位置設定(如圖 88)
+<img alt="原始手冊圖片 30" src="images/fig-030.png" /></li>
+</ol>
+<p>圖 88、儲存設定頁面之文件位置設定畫面</p>
+<p>File Location(文件位置):</p>
+<p>Root Folder Location設置虛擬刀房資料的根目錄位置。</p>
+<p>Raw Data Folder Location設置智慧刀把原始數據的目錄位置。</p>
+<p>Log File Location設置虛擬刀房異常事件的日誌文件目錄位置，而產生的日誌文件將會以CSV和TXT記錄STH以及Node Red系統運行過程中的異常事件和錯誤，以便於後續排查和問題診斷。</p>
+<p>Output Path設定STH預設輸出的文件路徑，用於存放已解析的數據。</p>
+<ol>
+<li>資料解析設定(TXT-&gt;CSV)(如圖 89)
+<img alt="原始手冊圖片 31" src="images/fig-031.png" /></li>
+</ol>
+<p>圖 89、儲存設定頁面之資料解析設定畫面</p>
+<p>Data Parsing(TXT -&gt; CSV):</p>
+<p>Record the Raw Data?(紀錄原始資料)選擇是否紀錄智慧刀把的原始數據。</p>
+<p>Save a Parsed File?(儲存已解析的文件)選擇是否將智慧刀把所偵測的力資訊TXT格式轉換為CSV格式。</p>
+<p>Write Mode of CSV(CSV 寫入模式)設定是否附加新的力資訊到現存的CSV文件中。</p>
+<p>Transfer Force Only?(只轉換力資訊)選擇是否僅將智慧刀把的原始數據轉譯為力資訊。</p>
+<p>Waiting Time for Parsing(Sec)(解析等待時間)設定每批次解譯智慧刀把原始數據的等待時間(以秒為單位)。</p>
+<p>Backup Raw Files to Another Folder?(備份原始數據)選擇是否將原始數據備份到其他資料夾。</p>
+<p>Threshold for Keep Data(Nm)設定受力的最小紀錄門檻，超過此值的數據才會被記錄。</p>
+<p>No. of TXT Files in a CSV File設定每個CSV文件中包含的TXT文件數量，數量可通過拉桿調整。</p>
+<ol>
+<li>校正系數設定(如圖 90)
+<img alt="原始手冊圖片 32" src="images/fig-032.png" /></li>
+</ol>
+<p>圖 90、儲存設定頁面之校正系數設定畫面</p>
+<p>Coefficients(校正系數):</p>
+<p>Time Interval of Forces(sec)設定力數據的時間間隔(秒)。</p>
+<p>Ratios for Force(力比例)設定不同受力通道的校正比例。</p>
+<p>Calibration of Channels(通道校正)設定各頻道的校正值。</p>
+<p>AVAILABLESTH按下此按鈕可以將目前啟用的STH-MAC各頻道的受力校正倍率和訊號校正倍率寫入設定中。如果沒有找到對應的MAC，則使用預設值。</p>
+<ol>
+<li>參數更新與日誌(如圖 91)
+<img alt="原始手冊圖片 33" src="images/fig-033.png" /></li>
+</ol>
+<p>圖 91、儲存設定頁面之參數更新與日誌畫面</p>
+<p>Parameter Updates(參數更新):</p>
+<p>當按下「APPLY UPDATES」後，這個區域會顯示所有連線檢查和儲存設定的內容，以JSON格式呈現，幫助確認變更是否正確應用。</p>
+<h2 id="_5">即時監控</h2>
+<p><img alt="原始手冊圖片 34" src="images/fig-034.png" /></p>
+<p>圖 92、即時監視頁面</p>
+<p>即時監控頁面操作流程</p>
+<ol>
+<li>操作區(Action)(如圖 93)
+<img alt="原始手冊圖片 35" src="images/fig-035.png" /></li>
+</ol>
+<p>圖 93、即時監視頁面之操作區畫面</p>
+<p>LOAD ALL(載入所有):</p>
+<p>按下此按鈕會載入STH連線和資料處理程序(STHComm、DataProcess)，以便開始即時監控。</p>
+<p>資料處理程序將會把感測原始資料的TXT檔案解析為CSV檔，以提供資料分析。</p>
+<p>ENABLE FUNC.(啟動功能):</p>
+<p>啟動STH連線和資料處理程序，系統進入可監控狀態，接收來自STH的資料。</p>
+<p>START RECORD(開始記錄):</p>
+<p>按下此按鈕開始記錄並處理來自STH的感測數據儲存為TXT檔，資料後續通過DataProcess進行處理並保存。</p>
+<p>SEND JOB(傳送任務):</p>
+<p>將選擇的工作(Job list)以MQTT形式發送至runSTHJobs.py，用於執行特定的STH操作。</p>
+<p>Job list從下拉選單中選擇要傳送的任務。</p>
+<p>Stop In Time(s)(定時停止):</p>
+<p>設定在指定的時間(以秒為單位)內自動停止記錄。</p>
+<p>TOOL CHANGE(換刀):</p>
+<p>當需要進行CNC換刀時，按下此按鈕觸發換刀動作。</p>
+<p>STOP RECORD(停止記錄):</p>
+<p>停止記錄並暫停感測數據的處理。</p>
+<p>DISABLE FUNC.(禁用功能):</p>
+<p>暫停資料處理程序，停止STH連線和數據收集。</p>
+<p>UNLOAD ALL(卸載所有):</p>
+<p>結束所有STH連線與資料處理程序，將系統返回至未監控狀態。</p>
+<ol>
+<li>線上智慧刀把(Online STH)(如圖 94)
+<img alt="原始手冊圖片 36" src="images/fig-036.png" /></li>
+</ol>
+<p>圖 94、即時監視頁面之線上智慧刀把畫面</p>
+<p>Current Plan(當前計畫):</p>
+<p>顯示目前正在執行的計畫檔案的絕對路徑。</p>
+<p>Package ID:</p>
+<p>每0.4秒接收到一個封包，封包ID會隨之累加，顯示當前連接的數據流量。</p>
+<p>STH ID:</p>
+<p>顯示目前連接的STH的MAC地址。</p>
+<p>RSSI(訊號強度):</p>
+<p>顯示當前連接的無線訊號強度。</p>
+<p>Power(電量):</p>
+<p>顯示目前啟用STH的剩餘電量。</p>
+<p>Recording Time(錄製時間):</p>
+<p>按下「START RECORD」後，這個區域會開始顯示已錄製的時間。</p>
+<p>Active:</p>
+<p>當此燈亮起時，表示目前的訊號穩定。</p>
+<p>Hold:</p>
+<p>當此燈亮起時，表示目前訊號不穩或與STH的連線中斷，導致收到的數據不完整。</p>
+<ol>
+<li>STH資料顯示(STH Data)(如圖 95)
+<img alt="原始手冊圖片 37" src="images/fig-037.png" /></li>
+</ol>
+<p>圖 95、即時監視頁面之STH資料顯示畫面</p>
+<p>Torque(Nm):</p>
+<p>以折線圖形式顯示目前STH讀取的扭矩數據。</p>
+<p>Bending X(N):</p>
+<p>以折線圖形式顯示目前STH讀取的彎曲力數據。</p>
+<ol>
+<li>日誌顯示(Logs)(如圖 96)
+<img alt="原始手冊圖片 38" src="images/fig-038.png" /></li>
+</ol>
+<p>圖 96、即時監視頁面之日誌顯示畫面</p>
+<p>STH Comm 日誌:</p>
+<p>當按下「LOAD ALL」後，這個區域會顯示STHComm.exe的運行日誌，幫助了解連線過程中的詳細情況。</p>
+<p>Data Process 日誌:</p>
+<p>當按下「LOAD ALL」後，這個區域會顯示DataProcess.exe的運行日誌，幫助追蹤數據處理的過程和狀態。</p>
+<h2 id="_6">自動測試</h2>
+<p>在「自動測試」模式中，查看「Power(電量)」、「RSSI(訊號強度)」、「Active(狀態)」指示燈是否都是正常，確認智慧刀把是正常工作。
+<img alt="原始手冊圖片 39" src="images/fig-039.png" /></p>
+<p>圖 97、自動測試頁面</p>
+<p>自動測試頁面操作流程</p>
+<ol>
+<li>參數區(Parameters)
+<img alt="原始手冊圖片 40" src="images/fig-040.png" /></li>
+</ol>
+<p>圖 98、自動測試頁面之參數區畫面</p>
+<p>Current Plan(當前計畫):</p>
+<p>顯示目前計畫檔案的絕對路徑。</p>
+<p>LOAD CURRENT(載入當前):</p>
+<p>按下此按鈕後，將當前設定的MAC、Port和Tool ID儲存，用於後續操作。</p>
+<p>Target MAC(目標 MAC):</p>
+<p>設定使用的智慧刀把的MAC地址。</p>
+<p>Target Port(目標端口):</p>
+<p>設定使用的智慧刀把的端口號。</p>
+<p>Target Tool ID(目標工具 ID):</p>
+<p>設定與智慧刀把綁定的工具ID。</p>
+<p>APPLY UPDATES(應用更新):</p>
+<p>將已確認的STH狀態更新保存至JSON文件中，為下一步操作提供依據。</p>
+<p>Content:</p>
+<p>按下「APPLY UPDATES」後，這個區域顯示連線檢查和儲存設定的更新內容，以便於確認所有參數的正確性。</p>
+<ol>
+<li>操作區(Action)
+<img alt="原始手冊圖片 41" src="images/fig-041.png" /></li>
+</ol>
+<p>圖 99、自動測試頁面之操作區畫面</p>
+<p>LOAD ALL(載入所有):</p>
+<p>載入STH連線與資料處理程序(STHComm、DataProcess)，準備開始自動測試。</p>
+<p>資料處理程序將會把感測原始資料的TXT檔案解析為CSV檔，提供資料分析。</p>
+<p>ENABLE FUNC.(啟動功能):</p>
+<p>啟動STH連線和資料處理程序，使系統進入工作狀態，準備接收和處理資料。</p>
+<p>START RECORD(開始記錄):</p>
+<p>開始記錄並處理來自STH的感測數據儲存為TXT檔，資料後續通過DataProcess進行處理並保存。</p>
+<p>Stop In Time(s)(定時停止):</p>
+<p>設定自動停止記錄的時間(以秒為單位)。</p>
+<p>STOP RECORD(停止記錄):</p>
+<p>停止記錄並暫停感測數據的處理。</p>
+<p>DISABLE FUNC.(禁用功能):</p>
+<p>暫停資料處理程序，停止STH連線和數據收集。</p>
+<p>UNLOAD ALL(卸載所有):</p>
+<p>結束所有STH連線與資料處理程序，使系統返回到未監控狀態。</p>
+<ol>
+<li>線上智慧刀把(Online STH)
+<img alt="原始手冊圖片 42" src="images/fig-042.png" /></li>
+</ol>
+<p>圖 100、自動測試頁面之線上智慧刀把畫面</p>
+<p>Power(電量):</p>
+<p>顯示目前啟用STH的電量。</p>
+<p>RSSI(訊號強度):</p>
+<p>顯示目前的無線訊號強度，幫助判斷連接的穩定性。</p>
+<p>Active:</p>
+<p>當此燈亮起時，表示目前訊號穩定，連線狀況良好。</p>
+<p>Hold:</p>
+<p>當此燈亮起時，表示目前訊號不穩定或與STH連線中斷，數據可能不完整。</p>
+<p>STH ID:</p>
+<p>顯示目前連接的STH的MAC地址。</p>
+<p>Package ID:</p>
+<p>每0.4秒接收到一個封包，封包ID會隨之累加，顯示當前的連接數據流量。</p>
+<p>Recording Time(錄製時間):</p>
+<p>按下「START RECORD」後，顯示已錄製的時間。</p>
+<p>Torque(Nm) 和 Bending X(N):</p>
+<p>分別以折線圖形式顯示STH讀取的扭矩和彎曲力數據。</p>
+<ol>
+<li>日誌顯示(Logs)
+<img alt="原始手冊圖片 43" src="images/fig-043.png" /></li>
+</ol>
+<p>圖 101、自動測試頁面之日誌顯示</p>
+<p>STH Comm 日誌:</p>
+<p>當按下「LOAD ALL」後，顯示STHComm.exe的運行日誌，幫助了解連線過程中的詳細情況。</p>
+<p>Data Process 日誌:</p>
+<p>當按下「LOAD ALL」後，顯示DataProcess.exe的運行日誌，幫助追蹤數據處理的過程和狀態。</p>
+<h2 id="_7">歷程檢視</h2>
+<p><img alt="原始手冊圖片 44" src="images/fig-044.png" /></p>
+<p>圖 102、歷程檢視頁面</p>
+<p>歷程檢視頁面操作流程</p>
+<ol>
+<li>計畫與資料夾設定
+<img alt="原始手冊圖片 45" src="images/fig-045.png" /></li>
+</ol>
+<p>圖 103、歷程檢視頁面之計畫與資料夾設定畫面</p>
+<p>Current Plan(當前計畫):</p>
+<p>顯示目前計畫檔案的絕對路徑，讓用戶知道當前正在檢視的計畫檔案。</p>
+<p>Folder(資料夾):</p>
+<p>選取路徑C:/VTR/RawData/output下的可用資料夾，載入對應的測試數據。</p>
+<p>File(檔案):</p>
+<p>選取目前目錄下的可用資料檔案，這些檔案用於回顧分析和增加上、下管制界限。</p>
+<p>ADD UCL LCL(為選取檔案增加上、下管制界限):</p>
+<p>Folder和File選取完後按下「ADD UCL LCL」，即可為選取的CSV檔增加上、下管制界線（UCL/LCL），輸出檔名稱為原檔名+_processed。</p>
+<p>Time Interval(時間間隔):</p>
+<p>選取目前目錄下的可用資料檔案，這些檔案用於回顧分析和增加上、下管制界限。</p>
+<ol>
+<li>合併檔案操作(File Merge)
+<img alt="原始手冊圖片 46" src="images/fig-046.png" /></li>
+</ol>
+<p>圖 104、歷程檢視頁面之合併檔案操作畫面</p>
+<p>LOAD FILEMERGE(載入合併):</p>
+<p>載入檔案合併功能，讓用戶能將多個測試結果進行合併，以便於進一步分析。</p>
+<p>ENABLE MERGE(啟動合併):</p>
+<p>啟動合併程序，將選中的檔案數據進行合併處理。</p>
+<p>PAUSE MERGE(暫停合併):</p>
+<p>暫停合併過程，允許用戶在合併途中進行其他操作或檢查數據。</p>
+<p>UNLOAD MERGE(卸載合併):</p>
+<p>結束所有合併處理程序，將系統返回至未進行合併狀態。</p>
+<ol>
+<li>數據摘要(Summary)
+<img alt="原始手冊圖片 47" src="images/fig-047.png" /></li>
+</ol>
+<p>圖 105、歷程檢視頁面之數據摘要畫面</p>
+<p>Start Time(開始時間)和End Time(結束時間):</p>
+<p>顯示數據回顧的開始和結束時間，用於精確了解測試的時間範圍。</p>
+<p>Time Index (from):</p>
+<p>調整顯示資料回顧點的時間條。</p>
+<p>Time Zoom(時間縮放):</p>
+<p>調整數據回顧的時間範圍，便於更細緻地分析特定時間段內的數據變化。</p>
+<p>CH1 Max、CH2 Max、CH3 Max、CH4 Max:</p>
+<p>顯示各個通道(CH1、CH2、BendingX、BendingY)的最大電壓值(mV)，幫助判斷各通道在測試過程中的數據表現。</p>
+<p>Quality(品質):</p>
+<p>顯示數據的品質狀態:</p>
+<p>1表示所有通道之間的差異在可接受範圍內，品質合格。</p>
+<p>-1表示存在超出容差範圍的差異，品質不合格，需要進一步檢查。</p>
+<ol>
+<li>基準設定(Add as Benchmark)
+<img alt="原始手冊圖片 48" src="images/fig-048.png" /></li>
+</ol>
+<p>圖 106、歷程檢視頁面之基準設定畫面</p>
+<p>SCAN PLAN(掃描計畫):</p>
+<p>重新掃描路徑C:/VTR/Plans下的計畫檔案，以便選取作為基準的檔案。</p>
+<p>Select a Plan(選擇計畫):</p>
+<p>選取目前路徑下可用的計畫檔案，這些檔案將作為後續測試的基準。</p>
+<p>AS BENCHMARK(設為基準):</p>
+<p>將選定的計畫檔案設為基準，用於與其他測試數據進行對比。</p>
+<ol>
+<li>圖表顯示(Charts)
+<img alt="原始手冊圖片 49" src="images/fig-049.png" /></li>
+</ol>
+<p>圖 107、歷程檢視頁面之圖表顯示畫面</p>
+<p>Torque(Nm)、Bending X(KNm)、Bending Y(KNm)、CH1(mV)、CH2(mV):</p>
+<p>顯示目前檔案中各通道的數據以折線圖形式呈現，這些圖表可以幫助用戶直觀地分析扭矩和彎曲力的變化情況。</p>
+<p>UCL, Upper Control Limit(管制上限)</p>
+<p>LCL, Lower Control Limit(管制下限)</p>
+<h2 id="_8">模擬分析</h2>
+<p><img alt="原始手冊圖片 50" src="images/fig-050.png" /></p>
+<p>圖 108、模擬分析頁面</p>
+<p>模擬分析頁面操作流程</p>
+<ol>
+<li>操作區(Action)
+<img alt="原始手冊圖片 51" src="images/fig-051.png" /></li>
+</ol>
+<p>圖 109、模擬分析頁面之操作區畫面</p>
+<p>Current Plan(當前計畫):</p>
+<p>顯示目前的計畫檔案，讓用戶知道當前正在進行分析的計畫檔案。</p>
+<p>UPDATE NC FILE(更新NC文件):</p>
+<p>根據設定頁面的信息更新目標NC檔案名稱，便於管理和同步最新的NC程序。</p>
+<p>NC File(NC文件):</p>
+<p>顯示當前目標NC檔案的名稱。</p>
+<p>Select File(選擇文件):</p>
+<p>選擇目前已有模擬結果的CSV文件，這些文件包含模擬的數據並將用於分析。</p>
+<p>Time Interval(時間間隔):</p>
+<p>顯示數據檢視過程中每點的間隔n(0.003*n sec)，用來控制數據回顧的解析度。</p>
+<ol>
+<li>模擬數據顯示(Simulation Data)
+<img alt="原始手冊圖片 52" src="images/fig-052.png" /></li>
+</ol>
+<p>圖 110、模擬分析頁面之模擬數據顯示畫面</p>
+<p>Moment Z、Moment Y:</p>
+<p>顯示所選擇的模擬CSV文件中Z軸和Y軸的平均力矩數據(以折線圖形式顯示)。</p>
+<p>UCL, Upper Control Limit(管制上限)。</p>
+<p>LCL, Lower Control Limit(管制下限)。</p>
+<p>圖表用於直觀地分析在不同時間點的Z軸和Y軸平均力矩變化情況，幫助理解工具在模擬運行過程中的受力情況。</p>
+<p>Coordinate X、Coordinate Y、Coordinate Z:</p>
+<p>顯示模擬數據中X軸、Y軸、Z軸的位置變化(以折線圖形式顯示)。</p>
+<p>若要查看工具的模擬移動軌跡，可查看 Coordinate X、Coordinate Y、Coordinate Z 圖表，以了解工具在模擬過程中於不同方向上的位置變動。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.instant", "navigation.instant.progress"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
